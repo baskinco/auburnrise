@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^auburnrise.ca [NC]
+RewriteRule ^(.*)$ https://www.auburnrise.ca/$1 [L,R=301]
+
+# One month for image files
+<filesMatch ".(jpg|jpeg|png|gif|ico)$">
+Header set Cache-Control "max-age=2628000, public"
+</filesMatch>
+
+# One week for css and js
+<filesMatch ".(css|js)$">
+Header set Cache-Control "max-age=604800, public"
+</filesMatch>

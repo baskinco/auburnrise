@@ -7,12 +7,24 @@ $white:       #fff;
 $dark-grey:   #444b4b;
 $medium-grey: #f1f7f7;
 
+
+/*--                  FONTS
+======================================================== */
+
+$neue-light:    'HelveticaNeueLTStd-Lt', Helvetica, sans-serif;
+$neue-thin:     'HelveticaNeueLTStd-Th', Helvetica, sans-serif;
+$neue-med-ext:  'HelveticaNeueLTStd-MdEx', Helvetica, sans-serif;
+$neue-med-cond: 'HelveticaNeueLTStd-MdCn', Helvetica, sans-serif;
+$lubalin-med:   'LubalinGraphStd-Medium', Palatino, serif;
+$lubalin-book:  'LubalinGraphStd-Book', Palatino, serif;
+
+
 /*--                 BASE ELEMENTS
 ============================================================================ */
 body {
   background-color: $white;
   padding-top: 32px;
-  font-family: HelveticaNeueLTStd-Lt, sans-serif;
+  font-family: $neue-light;
   font-weight: normal;
   font-style: normal;
   color: $ar-dark-grey;
@@ -22,14 +34,14 @@ body {
 
 h2 {
   margin-top: 30px;
-  font-family: HelveticaNeueLTStd-Th;
+  font-family: $neue-thin;
   font-size: 2.0em;
   line-height: 1.5em;
   color: $aqua;
 }
 
 h3 {
-  font-family: HelveticaNeueLTStd-Lt;
+  font-family: $neue-light;
   font-size: 1.7em;
   font-weight: 400;
   line-height: 1.2em;
@@ -118,7 +130,7 @@ a.navbar-brand > img{
 }
 
 .nav-item {
-  font-family: LubalinGraphStd-Medium;
+  font-family: $lubalin-med;
   font-weight: normal;
   font-style: normal;
   font-size: 1.0em;
@@ -392,7 +404,7 @@ video#bgvideo {
 
 .main-page-header {
   font-size: 3.2em;
-  font-family: HelveticaNeueLTStd-Th;
+  font-family: $neue-thin;
   letter-spacing: .01em;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -470,7 +482,7 @@ video#bgvideo {
 .feature-panel-img-head {
   font-size: 1.7em;
   text-align: center;
-  font-family: LubalinGraphStd-Book;
+  font-family: $lubalin-book;
   letter-spacing: 0.1em;
   font-style: normal;
   color: $white;
@@ -672,7 +684,7 @@ video#bgvideo {
 
 .condo-box-bottom > p {
   text-align: right;
-  font-family: LubalinGraphStd-Medium;
+  font-family: $lubalin-med;
   font-weight: normal;
   font-style: normal;
   font-size: 0.95em;
@@ -685,7 +697,7 @@ video#bgvideo {
   flex-direction: row;
   justify-content: flex-end;
   text-align: right;
-  font-family: LubalinGraphStd-Medium;
+  font-family: $lubalin-med;
   font-weight: normal;
   font-style: normal;
   font-size: 2.4em;
@@ -706,7 +718,7 @@ video#bgvideo {
 }
 
 .condo-box-bottom--dollar {
-  font-family: HelveticaNeueLTStd-Lt;
+  font-family: $neue-light;
   vertical-align: super;
   font-size: .5em;
 }
@@ -1005,7 +1017,7 @@ video#bgvideo {
 }
 
 .unit-header-name h3 {
-  font-family: HelveticaNeueLTStd-MdEx;
+  font-family: $neue-med-ext;
   letter-spacing: .05em;
   font-size: 2.5em;
   text-align: center;
@@ -1018,7 +1030,7 @@ video#bgvideo {
   align-items: center;
   width: 100%;
   height: 50px;
-  font-family: HelveticaNeueLTStd-MdCn;
+  font-family: $neue-med-cond;
   color: $aqua;
   padding: 10px;
   margin-bottom: 5px;
@@ -1047,7 +1059,7 @@ video#bgvideo {
 }
 
 .unit-header-price p:first-child {
-  font-family: LubalinGraphStd-Medium;
+  font-family: $lubalin-med;
   color: $aqua;
 }
 .unit-header-price .condo-box-bottom--price {
@@ -1250,7 +1262,7 @@ video#bgvideo {
   line-height: 0;
   padding-top: 2px;
   padding-bottom: 10px;
-  font-family: HelveticaNeueLTStd-Th;
+  font-family: $neue-thin;
   color: $aqua;
   font-size: 1.9em;
   border-bottom: 1px $aqua solid;
@@ -1296,11 +1308,6 @@ video#bgvideo {
   .contact-headoffice h4 {
     font-size: 1.8em;
   }
-
-  .contact-headoffice h4 {
-
-  }
-
 }
 
 /*--              ABOUT US
@@ -1442,7 +1449,7 @@ video#bgvideo {
 }
 
 .area-mgr--copy h4 {
-  font-family: LubalinGraphStd-Medium;
+  font-family: $lubalin-med;
   font-size: 1.1em;
 }
 
@@ -1511,7 +1518,7 @@ video#bgvideo {
 }
 
 .cta-bottom-btn {
-  font-family: LubalinGraphStd-Book;
+  font-family: $lubalin-book;
   letter-spacing: .08em;
   font-size: 16px;
   line-height: 35px;
@@ -1645,7 +1652,7 @@ video#bgvideo {
   border-radius: 2px;
   border-width: 1px;
   border-color: #9ea5aa;
-  font-family: HelveticaNeueLTStd-Lt, sans-serif;
+  font-family: $neue-light;
   color: $aqua;
   font-size: 1.1em;
   font-style: normal;
@@ -1688,7 +1695,7 @@ video#bgvideo {
 
 
 .submit-button {
-  font-family: LubalinGraphStd-Book, sans-serif;
+  font-family: $lubalin-book;
   letter-spacing: .08em;
   font-size: 1.1em;
   line-height: 25px;

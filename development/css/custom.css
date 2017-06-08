@@ -1377,10 +1377,11 @@ video#bgvideo {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
+  align-items: center;
   background-color: $white;
+  text-align: center;
   height: 100%;
-  padding: 20px 10%;
+  padding: 50px 2%;
 }
 
 .map-address {
@@ -1492,7 +1493,7 @@ video#bgvideo {
 /*--              CTA-BOTTOM
 ============================================================================ */
 .cta-bottom {
-  background-color: $dark-grey;
+
   display: flex;
   justify-content: center;
   flex-direction: column;

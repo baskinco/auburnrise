@@ -1,3 +1,4 @@
+
 /*--                  COLOURS
 ======================================================== */
 .ar-aqua {color: #00a9b7;}
@@ -5,7 +6,8 @@ $aqua:        #00a9b7;
 $brown:       #6e2700;
 $white:       #fff;
 $dark-grey:   #444b4b;
-$medium-grey: #f1f7f7;
+$medium-grey: #9EA3A3;
+$light-grey: #f1f7f7;
 
 
 /*--                  FONTS
@@ -27,7 +29,7 @@ body {
   font-family: $neue-light;
   font-weight: normal;
   font-style: normal;
-  color: $ar-dark-grey;
+  color: $dark-grey;
   line-height: 2em;
   margin-top: 48px;
 }
@@ -48,7 +50,8 @@ h3 {
 }
 
 h3.ar-aqua {
-  margin-top: 50px;
+  /*margin-top: 50px;*/
+  margin-top: 100px;
 }
 
 .p-0 {font-size: 1em;}
@@ -67,7 +70,7 @@ hr {
   height: 20px;
  	width: 100%;
 	height: 50px;
-	border-bottom: 1px solid $medium-grey;
+	border-bottom: 1px solid $light-grey;
 	box-shadow: 0 15px 15px -20px $dark-grey;
   margin: -50px auto 10px;
 }
@@ -135,7 +138,7 @@ a.navbar-brand > img{
   font-style: normal;
   font-size: 1.0em;
   margin-top: 20px;
-  color:$medium-grey;
+  color:$light-grey;
   height: 40px;
   text-align: center;
 }
@@ -450,9 +453,10 @@ video#bgvideo {
   min-width: 280px;
   height: 100%;
   background-color: $white;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(120,120,120,.7);
+  border: 1px $medium-grey solid;
+/*  -webkit-box-shadow: 0px 3px 10px 0px rgba(120,120,120,.7);
   -moz-box-shadow: 0px 3px 10px 0px rgba(120,120,120,.7);
-  box-shadow: 0px 3px 10px 0px rgba(120,120,120,.7);
+  box-shadow: 0px 3px 10px 0px rgba(120,120,120,.7);*/
 }
 
 .feature-panel-img {
@@ -878,9 +882,10 @@ video#bgvideo {
   background-repeat: no-repeat;
   background-position: center top 20px;
   background-size: 200px 200px;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(120,120,120,.7);
+  border: 1px $medium-grey solid;
+/*  -webkit-box-shadow: 0px 3px 10px 0px rgba(120,120,120,.7);
   -moz-box-shadow: 0px 3px 10px 0px rgba(120,120,120,.7);
-  box-shadow: 0px 3px 10px 0px rgba(120,120,120,.7);
+  box-shadow: 0px 3px 10px 0px rgba(120,120,120,.7);*/
 }
 
 .standards-top-box--windows { background-image: url("../images/standards_windows.png");}
@@ -905,9 +910,10 @@ video#bgvideo {
   background-repeat: no-repeat;
   background-position: center top 20px;
   background-size: 95%;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(120,120,120,.7);
+  border: 1px $medium-grey solid;
+/*  -webkit-box-shadow: 0px 3px 10px 0px rgba(120,120,120,.7);
   -moz-box-shadow: 0px 3px 10px 0px rgba(120,120,120,.7);
-  box-shadow: 0px 3px 10px 0px rgba(120,120,120,.7);
+  box-shadow: 0px 3px 10px 0px rgba(120,120,120,.7);*/
 }
 
 .standards-top-title {
@@ -928,6 +934,46 @@ video#bgvideo {
   padding: 0 5px;
 }
 
+/* New Standards panel */
+.standards-container {
+  margin-top: 50px;
+}
+
+.item-bottom {
+  position: absolute;
+  z-index: 1;
+  width: 200px;
+  height: 200px;
+  margin: 25px auto;
+  padding-top: 75px;
+  background: #ccc;
+  text-align: center;
+  color: #FFF;
+  font-size: 3em;
+}
+
+.item-top {
+  position: absolute;
+  z-index: 2;
+  width: 200px;
+  height: 200px;
+  margin: 25px auto;
+  padding-top: 75px;
+  background: #ccc;
+  text-align: center;
+  color: #FFF;
+  font-size: 3em;
+}
+
+.item-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 240px;
+}
+
+/* Standards media queries */
 @media (min-width: 768px) {
   .standards-top-panel {
     flex-direction: row;

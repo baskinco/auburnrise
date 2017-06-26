@@ -1,4 +1,5 @@
 
+
 /*--                  COLOURS
 ======================================================== */
 .ar-aqua {color: #00a9b7;}
@@ -9,6 +10,35 @@ $dark-grey:   #444b4b;
 $medium-grey: #9EA3A3;
 $light-grey: #f1f7f7;
 
+/* MODAL */
+
+#modal-content {
+  width: 500px;
+  height: 500px;
+  display: none;
+  background-image: url('http://via.placeholder.com/500x500');
+
+}
+
+#modal-content label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#modal-content input {
+  width: 95%;
+}
+
+.cta {
+
+}
+
+input {
+  border: 1px solid #333;
+  margin-bottom: 15px;
+  min-width: 250px;
+  padding: 8px;
+}
 
 /*--                  FONTS
 ======================================================== */

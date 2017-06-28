@@ -22,12 +22,17 @@
       <button href="#bottom" class="button order-cheezburger">Order Cheezburger</button>
     </div>
     <div id="bottom">
-      <h1 style="height:400px">Bottom Header </h1>
+      <h1 style="height:1000px">Bottom Header </h1>
     </div>
 
     <script>
 
       var lastFocus;
+
+      $(".order-cheezburger").on("click", function() {
+        $.colorbox.close();
+        window.location.replace('#bottom');
+      });
 
       function onPopupMobileOpen() {
         $("#myInput").focus();
@@ -89,8 +94,6 @@
           } else {
             displayMobilePopup();
           }
-
-
         }
       }, 2000);
 

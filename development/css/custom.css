@@ -20,30 +20,16 @@ $light-grey:  #f1f7f7;
   background-repeat: no-repeat;
 }
 
-#modal-mobile-content label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-#modal-mobile-content input {
-  width: 80%;
-}
 
 #modal-desktop-content {
   width: 540px;
   height: 540px;
   display: none;
   background-image: url('../images/1000upgrades_540.png');
+  background-repeat: no-repeat;
 }
 
-#modal-desktop-content label {
-  display: block;
-  margin-bottom: 5px;
-}
 
-#modal-desktop-content input {
-  width: 80%;
-}
 
 .cta {
 

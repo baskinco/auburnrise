@@ -8,15 +8,15 @@ $brown:       #6e2700;
 $white:       #fff;
 $dark-grey:   #444b4b;
 $medium-grey: #9EA3A3;
-$light-grey: #f1f7f7;
+$light-grey:  #f1f7f7;
 
 /* MODAL */
 
 #modal-content {
-  width: 500px;
-  height: 500px;
+  width:280px;
+  height: 320px;
   display: none;
-  background-image: url('http://via.placeholder.com/500x500');
+  background-image: url('../images/1000upgrades.png');
 
 }
 
@@ -26,7 +26,7 @@ $light-grey: #f1f7f7;
 }
 
 #modal-content input {
-  width: 95%;
+  width: 80%;
 }
 
 .cta {

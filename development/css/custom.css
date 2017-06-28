@@ -12,20 +12,36 @@ $light-grey:  #f1f7f7;
 
 /* MODAL */
 
-#modal-content {
+#modal-mobile-content {
   width:280px;
-  height: 320px;
+  height: 400px;
   display: none;
   background-image: url('../images/1000upgrades.png');
-
+  background-repeat: no-repeat;
 }
 
-#modal-content label {
+#modal-mobile-content label {
   display: block;
   margin-bottom: 5px;
 }
 
-#modal-content input {
+#modal-mobile-content input {
+  width: 80%;
+}
+
+#modal-desktop-content {
+  width: 540px;
+  height: 540px;
+  display: none;
+  background-image: url('../images/1000upgrades_540.png');
+}
+
+#modal-desktop-content label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#modal-desktop-content input {
   width: 80%;
 }
 

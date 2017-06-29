@@ -100,7 +100,7 @@ h3.ar-aqua {
 hr {
   border:none;
   height: 20px;
- 	width: 100%;
+ 	width: 95%;
 	height: 50px;
 	border-bottom: 1px solid $light-grey;
 	box-shadow: 0 15px 15px -20px $dark-grey;
@@ -270,7 +270,7 @@ a.navbar-brand > img{
 .jumbotron, .jumbotron-home, .jumbotron-condo {
   padding-bottom: 0;
   padding-top: 0;
-  border-top: solid 8px $aqua;
+/*  border-top: solid 8px $aqua;*/
   border-bottom: solid 8px $aqua;
   margin-bottom: 0;
 }
@@ -557,7 +557,7 @@ video#bgvideo {
     width: 325px;
     height: 100%;
     margin-bottom: 5px;
-    min-height: 500px;
+    min-height: 513px;
   }
 
   .feature-panel-img {
@@ -1634,7 +1634,6 @@ video#bgvideo {
 .footer {
   background-color: $dark-grey;
   display: block;
-  overflow: auto;
   padding-top: 20px;
 }
 

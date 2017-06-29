@@ -27,8 +27,6 @@
 
     <script>
 
-      var lastFocus;
-
       $(".order-cheezburger").on("click", function() {
         $.colorbox.close();
         window.location.replace('#bottom');
@@ -53,7 +51,7 @@
       function onPopupDesktopClose() {
         $("#modal-desktop-content").hide();
         Cookies.set('colorboxShown','yes', { expires: 1 });
-        lastFocus.focus();
+
       }
 
       function displayDesktopPopup(){

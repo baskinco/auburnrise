@@ -10,37 +10,28 @@ $dark-grey:   #444b4b;
 $medium-grey: #9EA3A3;
 $light-grey:  #f1f7f7;
 
-/* MODAL */
+/*--                  MODAL
+======================================================== */
 
 #modal-mobile-content {
-  width:280px;
-  height: 400px;
+  /*width:280px;
+  height: 400px;*/
+  text-align: center;
   display: none;
-  background-image: url('../images/1000upgrades.png');
-  background-repeat: no-repeat;
+/*  background-image: url('../images/1000upgrades.png');
+  background-repeat: no-repeat;*/
 }
-
 
 #modal-desktop-content {
-  width: 540px;
+  /*width: 500px;*/
+  text-align: center;
   height: 540px;
+  padding: 0;
   display: none;
-  background-image: url('../images/1000upgrades_540.png');
-  background-repeat: no-repeat;
+  /*background-image: url('../images/1000upgrades_540.png');
+  background-repeat: no-repeat;*/
 }
 
-
-
-.cta {
-
-}
-
-input {
-  border: 1px solid #333;
-  margin-bottom: 15px;
-  min-width: 250px;
-  padding: 8px;
-}
 
 /*--                  FONTS
 ======================================================== */

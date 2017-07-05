@@ -1,4 +1,5 @@
 
+
 /*--                  COLOURS
 ======================================================== */
 .ar-aqua {color: #00a9b7;}
@@ -7,7 +8,29 @@ $brown:       #6e2700;
 $white:       #fff;
 $dark-grey:   #444b4b;
 $medium-grey: #9EA3A3;
-$light-grey: #f1f7f7;
+$light-grey:  #f1f7f7;
+
+/*--                  MODAL
+======================================================== */
+
+#modal-mobile-content {
+  /*width:280px;
+  height: 400px;*/
+  text-align: center;
+  display: none;
+/*  background-image: url('../images/1000upgrades.png');
+  background-repeat: no-repeat;*/
+}
+
+#modal-desktop-content {
+  /*width: 500px;*/
+  text-align: center;
+  height: 540px;
+  padding: 0;
+  display: none;
+  /*background-image: url('../images/1000upgrades_540.png');
+  background-repeat: no-repeat;*/
+}
 
 
 /*--                  FONTS
@@ -68,7 +91,7 @@ h3.ar-aqua {
 hr {
   border:none;
   height: 20px;
- 	width: 100%;
+ 	width: 95%;
 	height: 50px;
 	border-bottom: 1px solid $light-grey;
 	box-shadow: 0 15px 15px -20px $dark-grey;
@@ -238,7 +261,7 @@ a.navbar-brand > img{
 .jumbotron, .jumbotron-home, .jumbotron-condo {
   padding-bottom: 0;
   padding-top: 0;
-  border-top: solid 8px $aqua;
+/*  border-top: solid 8px $aqua;*/
   border-bottom: solid 8px $aqua;
   margin-bottom: 0;
 }
@@ -525,7 +548,7 @@ video#bgvideo {
     width: 325px;
     height: 100%;
     margin-bottom: 5px;
-    min-height: 500px;
+    min-height: 513px;
   }
 
   .feature-panel-img {
@@ -980,7 +1003,7 @@ video#bgvideo {
   }
 
   .standards-top-box {
-    min-height:46em;
+    min-height:49em;
     background-size: 150px 150px;
     padding: 190px 20px 10px 20px;
   }
@@ -1602,7 +1625,6 @@ video#bgvideo {
 .footer {
   background-color: $dark-grey;
   display: block;
-  overflow: auto;
   padding-top: 20px;
 }
 

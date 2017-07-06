@@ -148,7 +148,8 @@ a.navbar-brand > img{
 
 .navbar-nav {
   background-color: $dark-grey;
-  padding: 0 20px 20px 20px;
+  margin-top: 0px;
+
   }
 
 .navbar-toggle {
@@ -171,11 +172,14 @@ a.navbar-brand > img{
 }
 
 .nav-item-register {
-   color: $dark-grey;
-  /* border-style: solid;
-  border-width: thin;
-  border-color:$aqua;
-  border-radius: 1px;*/
+   color: $light-grey;
+   visibility: collapse;
+   font-family: $lubalin-med;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 1.0em;
+   
+   text-align: center;
 }
 
 .navbar-default .navbar-nav .nav-item-register li a:hover {
@@ -224,6 +228,11 @@ a.navbar-brand > img{
   }
 
   .nav-item-register {
+    font-size: .9em;
+    margin-top: 30px;
+    height: 45px;
+    text-align: center;
+    visibility: visible;
     border-style: solid;
     border-width: thin;
     border-color: $aqua;
@@ -253,6 +262,10 @@ a.navbar-brand > img{
   .nav-item {
     font-size: 1.0em;
     margin-left: 35px;
+  }
+
+  .nav-item-register {
+    font-size: 1.0em;
   }
 }
 

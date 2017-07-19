@@ -17,22 +17,15 @@ $light-grey:  #f1f7f7;
 ======================================================== */
 
 #modal-mobile-content {
-  /*width:280px;
-  height: 400px;*/
   text-align: center;
   display: none;
-/*  background-image: url('../images/1000upgrades.png');
-  background-repeat: no-repeat;*/
 }
 
 #modal-desktop-content {
-  /*width: 500px;*/
   text-align: center;
   height: 540px;
   padding: 0;
   display: none;
-  /*background-image: url('../images/1000upgrades_540.png');
-  background-repeat: no-repeat;*/
 }
 
 

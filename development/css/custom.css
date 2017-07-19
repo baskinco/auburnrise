@@ -989,20 +989,6 @@ video#bgvideo {
   position: relative;
   height: 350px;
   margin-bottom: 25px;
-
-
-    /*ul{
-      margin-top: 100px;
-      -webkit-padding-start: 0px;
-      color: $white;
-    }
-    li {
-      font-size: 0.9em;
-      line-height: 1.8em;
-      text-align: center;
-      list-style-position: inside;
-    }*/
-  }
 }
 
 .standards-item {
@@ -1010,23 +996,78 @@ video#bgvideo {
   text-align: center;
   width: 300px;
   height: 330px;
+
+  img {
+    padding-top: 70px;
+  }
   h3 {
     color: $aqua;
     font-size: 1.2em;
     padding-bottom: 10px;
   }
   ul{
-    margin-top: 240px;
     -webkit-padding-start: 0px;
+    padding: 5px 10px 0px 10px;
     color: $white;
   }
   li {
-    font-size: 0.9em;
-    line-height: 1.8em;
+    font-size: 0.95em;
+    line-height: 1.4em;
     text-align: center;
     list-style-position: inside;
   }
+  .content_ul{
+    position: absolute;
+    height: 100px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+  }
+}
 
+.content {
+  background: url(../images/standards/stand_item_back.png) no-repeat center;
+  background-size: 300px 330px;
+}
+
+.windows {
+    background: url(../images/standards/windows_xs.png) no-repeat center;
+    background-size: 300px 330px;
+}
+
+.stainless {
+    background: url(../images/standards/stainless_xs.png) no-repeat center;
+    background-size: 300px 330px;
+}
+
+.ceilings {
+    background: url(../images/standards/ceilings_xs.png) no-repeat center;
+    background-size: 300px 330px;
+}
+
+.ventilation {
+    background: url(../images/standards/ventilation_xs.png) no-repeat center;
+    background-size: 300px 330px;
+}
+
+.cabinets {
+    background: url(../images/standards/cabinets_xs.png) no-repeat center;
+    background-size: 300px 330px;
+}
+
+.finishes {
+    background: url(../images/standards/finishes_xs.png) no-repeat center;
+    background-size: 300px 330px;
+}
+
+.sound {
+    background: url(../images/standards/sound_xs.png) no-repeat center;
+    background-size: 300px 330px;
+}
+
+.lake {
+    background: url(../images/standards/lake_xs.png) no-repeat center;
+    background-size: 300px 330px;
 }
 
 @media (min-width: 767px){
@@ -1038,6 +1079,7 @@ video#bgvideo {
     margin: 0 10px;
   }
   .windows {
+    background: url(../images/standards/windows_full_xs.png) no-repeat center;
     ul {
       visibility: hidden;
     }
@@ -1051,50 +1093,6 @@ video#bgvideo {
   .standards-item {
     margin: 0 40px;
   }
-}
-
-.content {
-  background: url(../images/standards/stand_item_back_01.png) no-repeat center;
-  background-size: 300px 330px;
-}
-.windows {
-    background: url(../images/standards/stand_item_back_02.png) no-repeat center;
-    background-size: 300px 330px;
-}
-
-.stainless {
-    background: url(../images/standards/stainless_xs.jpg) no-repeat center;
-    background-size: 292px 243px;
-}
-
-.ceilings {
-    background: url(../images/standards/ceilings_xs.jpg) no-repeat center;
-    background-size: 292px 243px;
-}
-
-.ventilation {
-    background: url(../images/standards/freshair_xs.jpg) no-repeat center;
-    background-size: 292px 243px;
-}
-
-.cabinets {
-    background: url(../images/standards/cabinets_xs.jpg) no-repeat center;
-    background-size: 292px 243px;
-}
-
-.finishes {
-    background: url(../images/standards/finishes_xs.jpg) no-repeat center;
-    background-size: 292px 243px;
-}
-
-.sound {
-    background: url(../images/standards/sound_xs.jpg) no-repeat center;
-    background-size: 292px 243px;
-}
-
-.lake {
-    background: url(../images/standards/lake_xs.jpg) no-repeat center;
-    background-size: 292px 243px;
 }
 
 

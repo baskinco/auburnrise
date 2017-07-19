@@ -5,10 +5,17 @@ var gulp = require('gulp'),
     precss = require('precss'),
     htmlmin = require('gulp-htmlmin'),
     cssnano = require('cssnano'),
+    image = require('gulp-image'),
 
     source = 'development/',
     dest = 'production/';
 
+// Optimize images through gulp-image
+gulp.task('imageoptim', function() {
+  gulp.src(source + 'images/**/*.{jpg,JPG}')
+  .pipe(image())
+  .pipe(gulp.dest(dest + 'images'));
+});
 
 // HTML
 gulp.task('html', function() {

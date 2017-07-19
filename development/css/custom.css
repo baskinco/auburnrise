@@ -921,9 +921,6 @@ video#bgvideo {
   background-position: center top 20px;
   background-size: 200px 200px;
   border: 1px $medium-grey solid;
-/*  -webkit-box-shadow: 0px 3px 10px 0px rgba(120,120,120,.7);
-  -moz-box-shadow: 0px 3px 10px 0px rgba(120,120,120,.7);
-  box-shadow: 0px 3px 10px 0px rgba(120,120,120,.7);*/
 }
 
 .standards-top-box--windows { background-image: url("../images/standards_windows.png");}
@@ -949,9 +946,6 @@ video#bgvideo {
   background-position: center top 20px;
   background-size: 95%;
   border: 1px $medium-grey solid;
-/*  -webkit-box-shadow: 0px 3px 10px 0px rgba(120,120,120,.7);
-  -moz-box-shadow: 0px 3px 10px 0px rgba(120,120,120,.7);
-  box-shadow: 0px 3px 10px 0px rgba(120,120,120,.7);*/
 }
 
 .standards-top-title {
@@ -1009,6 +1003,7 @@ video#bgvideo {
     -webkit-padding-start: 0px;
     padding: 5px 10px 0px 10px;
     color: $white;
+    list-style-type: none;
   }
   li {
     font-size: 0.95em;
@@ -1031,43 +1026,43 @@ video#bgvideo {
 }
 
 .windows {
-    background: url(../images/standards/windows_xs.png) no-repeat center;
-    background-size: 300px 330px;
+  background: url(../images/standards/windows_xs.png) no-repeat center;
+  background-size: 300px 330px;
 }
 
 .stainless {
-    background: url(../images/standards/stainless_xs.png) no-repeat center;
-    background-size: 300px 330px;
+  background: url(../images/standards/stainless_xs.png) no-repeat center;
+  background-size: 300px 330px;
 }
 
 .ceilings {
-    background: url(../images/standards/ceilings_xs.png) no-repeat center;
-    background-size: 300px 330px;
+  background: url(../images/standards/ceilings_xs.png) no-repeat center;
+  background-size: 300px 330px;
 }
 
 .ventilation {
-    background: url(../images/standards/ventilation_xs.png) no-repeat center;
-    background-size: 300px 330px;
+  background: url(../images/standards/ventilation_xs.png) no-repeat center;
+  background-size: 300px 330px;
 }
 
 .cabinets {
-    background: url(../images/standards/cabinets_xs.png) no-repeat center;
-    background-size: 300px 330px;
+  background: url(../images/standards/cabinets_xs.png) no-repeat center;
+  background-size: 300px 330px;
 }
 
 .finishes {
-    background: url(../images/standards/finishes_xs.png) no-repeat center;
-    background-size: 300px 330px;
+  background: url(../images/standards/finishes_xs.png) no-repeat center;
+  background-size: 300px 330px;
 }
 
 .sound {
-    background: url(../images/standards/sound_xs.png) no-repeat center;
-    background-size: 300px 330px;
+  background: url(../images/standards/sound_xs.png) no-repeat center;
+  background-size: 300px 330px;
 }
 
 .lake {
-    background: url(../images/standards/lake_xs.png) no-repeat center;
-    background-size: 300px 330px;
+  background: url(../images/standards/lake_xs.png) no-repeat center;
+  background-size: 300px 330px;
 }
 
 @media (min-width: 767px){
@@ -1080,20 +1075,66 @@ video#bgvideo {
   }
   .windows {
     background: url(../images/standards/windows_full_xs.png) no-repeat center;
-    ul {
-      visibility: hidden;
-    }
+    ul {visibility: hidden;}
+  }
+
+  .stainless {
+      background: url(../images/standards/stainless_full_xs.png) no-repeat center;
+      ul {visibility: hidden;}
+  }
+
+  .ceilings {
+      background: url(../images/standards/ceilings_full_xs.png) no-repeat center;
+      ul {visibility: hidden;}
+  }
+
+  .ventilation {
+      background: url(../images/standards/ventilation_full_xs.png) no-repeat center;
+      ul {visibility: hidden;}
+  }
+
+  .cabinets {
+      background: url(../images/standards/cabinets_full_xs.png) no-repeat center;
+      ul {visibility: hidden;}
+  }
+
+  .finishes {
+      background: url(../images/standards/finishes_full_xs.png) no-repeat center;
+      ul {visibility: hidden;}
+  }
+
+  .sound {
+      background: url(../images/standards/sound_full_xs.png) no-repeat center;
+      ul {visibility: hidden;}
+  }
+
+  .lake {
+      background: url(../images/standards/lake_full_xs.png) no-repeat center;
+      ul {visibility: hidden;}
   }
 }
 
 @media (min-width: 992px){
   .standards-item-container {
-    margin-bottom: 100px;
+    margin-bottom: 75px;
   }
   .standards-item {
-    margin: 0 40px;
+    margin: 0 20px;
+    width: 450px;
+  }
+  .windows {
+    background: url("http://via.placeholder.com/450x330") no-repeat center;
+    background-size: 450px 330px;
+    ul {visibility: hidden;}
+  }
+
+  .content {
+    background: url("http://via.placeholder.com/450x330") no-repeat center;
+    background-size: 450px 330px;
   }
 }
+
+
 
 
 /* Standards media queries */

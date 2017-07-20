@@ -1170,6 +1170,72 @@ video#bgvideo {
   }
 }
 
+
+/* - old standards stuff- */
+.standards-top-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.standards-top-box {
+  margin: 0 1% 30px;
+  padding: 250px 20px 10px 20px;
+  width: 100%;
+  height: auto;
+  overflow:auto;
+  background-color: $white;
+  background-repeat: no-repeat;
+  background-position: center top 20px;
+  background-size: 200px 200px;
+  border: 1px $medium-grey solid;
+}
+
+.standards-top-box--windows { background-image: url("../images/standards_windows.png");}
+.standards-top-box--sound { background-image: url("../images/standards_sound.png");}
+.standards-top-box--ventilation { background-image: url("../images/standards_ventilation.png");}
+
+.standards-bottom-panel {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.standards-bottom-box {
+  margin: 0 1% 30px;
+  padding: 57% 20px 10px 20px;
+  width: 100%;
+  height: auto;
+  overflow:auto;
+  background-color: $white;
+  background-image: url("../images/luxury.jpg");
+  background-repeat: no-repeat;
+  background-position: center top 20px;
+  background-size: 95%;
+  border: 1px $medium-grey solid;
+}
+
+.standards-top-title {
+  color: $aqua;
+  text-align: center;
+  padding: 2% 0;
+}
+
+.standards-bottom-title {
+  color: $aqua;
+  text-align: center;
+  padding: 2% 0;
+}
+
+.standards-copy {
+  letter-spacing: .02em;
+  font-size: 1.1em;
+  padding: 0 5px;
+}
+
 /*--              UNIT PANELS
 ============================================================================ */
 

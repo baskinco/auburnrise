@@ -1236,6 +1236,70 @@ video#bgvideo {
   padding: 0 5px;
 }
 
+/* Standards media queries */
+@media (min-width: 768px) {
+  .standards-top-panel {
+    flex-direction: row;
+  }
+
+  .standards-top-box {
+    min-height:49em;
+    background-size: 150px 150px;
+    padding: 190px 20px 10px 20px;
+  }
+
+  .standards-bottom-panel {
+    flex-direction: row;
+  }
+
+  .standards-bottom-box {
+    padding-top: 355px;
+  }
+
+  .standards-top-title {
+    min-height: 4.1em;
+  }
+}
+
+@media (min-width: 992px) {
+  .standards-top-box {
+    min-height: 42em;
+    background-size: 190px 190px;
+    padding: 220px 20px 10px 20px;
+  }
+
+  .standards-bottom-panel {
+    flex-direction: row;
+  }
+
+  .standards-bottom-box {
+    padding-top: 470px;
+  }
+
+  .standards-top-title {
+    min-height: 3em;
+  }
+
+  .standards-copy {
+
+  }
+}
+
+@media (min-width: 1200px) {
+  .standards-top-box {
+    min-height: 39em;
+    background-size: 210px 210px;
+    padding: 240px 20px 10px 20px;
+  }
+
+  .standards-top-title {
+    min-height: 2em;
+  }
+
+  .standards-bottom-box {
+    padding-top: 565px;
+  }
+}
 /*--              UNIT PANELS
 ============================================================================ */
 

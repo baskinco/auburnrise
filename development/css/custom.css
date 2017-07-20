@@ -1107,13 +1107,17 @@ video#bgvideo {
   .standards-item {
     margin: 0 20px;
     width: 450px;
+    h3 {
+      font-size: 1.5em;
+    }
     li {
       font-size: 1.05em;
-      line-height: 1.4em;
+      line-height: 1.5em;
     }
     ul{
       padding: 5px 15px 0px 15px;
     }
+
   }
   .content {
     background: url(../images/standards/stand_items_back_md.png) no-repeat center;
@@ -1159,10 +1163,6 @@ video#bgvideo {
     background-size: 450px 330px;
     ul {visibility: hidden;}
   }
-
-
-
-
 }
 
 

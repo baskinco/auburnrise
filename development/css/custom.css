@@ -1070,37 +1070,30 @@ video#bgvideo {
     background: url(../images/standards/windows_full_xs.png) no-repeat center;
     ul {visibility: hidden;}
   }
-
   .stainless {
       background: url(../images/standards/stainless_full_xs.png) no-repeat center;
       ul {visibility: hidden;}
   }
-
   .ceilings {
       background: url(../images/standards/ceilings_full_xs.png) no-repeat center;
       ul {visibility: hidden;}
   }
-
   .ventilation {
       background: url(../images/standards/ventilation_full_xs.png) no-repeat center;
       ul {visibility: hidden;}
   }
-
   .cabinets {
       background: url(../images/standards/cabinets_full_xs.png) no-repeat center;
       ul {visibility: hidden;}
   }
-
   .finishes {
       background: url(../images/standards/finishes_full_xs.png) no-repeat center;
       ul {visibility: hidden;}
   }
-
   .sound {
       background: url(../images/standards/sound_full_xs.png) no-repeat center;
       ul {visibility: hidden;}
   }
-
   .lake {
       background: url(../images/standards/lake_full_xs.png) no-repeat center;
       ul {visibility: hidden;}
@@ -1114,17 +1107,62 @@ video#bgvideo {
   .standards-item {
     margin: 0 20px;
     width: 450px;
+    li {
+      font-size: 1.05em;
+      line-height: 1.4em;
+    }
+    ul{
+      padding: 5px 15px 0px 15px;
+    }
+  }
+  .content {
+    background: url(../images/standards/stand_items_back_md.png) no-repeat center;
+    background-size: 450px 330px;
   }
   .windows {
-    background: url("http://via.placeholder.com/450x330") no-repeat center;
+    background: url(../images/standards/windows_full_md.png) no-repeat center;
+    background-size: 450px 330px;
+    ul {visibility: hidden;}
+  }
+  .stainless {
+    background: url(../images/standards/stainless_full_md.png) no-repeat center;
+    background-size: 450px 330px;
+    ul {visibility: hidden;}
+  }
+  .ceilings {
+    background: url(../images/standards/ceilings_full_md.png) no-repeat center;
+    background-size: 450px 330px;
+    ul {visibility: hidden;}
+  }
+  .ventilation {
+    background: url(../images/standards/ventilation_full_md.png) no-repeat center;
+    background-size: 450px 330px;
+    ul {visibility: hidden;}
+  }
+  .cabinets {
+    background: url(../images/standards/cabinets_full_md.png) no-repeat center;
+    background-size: 450px 330px;
+    ul {visibility: hidden;}
+  }
+  .finishes {
+    background: url(../images/standards/finishes_full_md.png) no-repeat center;
+    background-size: 450px 330px;
+    ul {visibility: hidden;}
+  }
+  .sound {
+    background: url(../images/standards/sound_full_md.png) no-repeat center;
+    background-size: 450px 330px;
+    ul {visibility: hidden;}
+  }
+  .lake {
+    background: url(../images/standards/lake_full_md.png) no-repeat center;
     background-size: 450px 330px;
     ul {visibility: hidden;}
   }
 
-  .content {
-    background: url("http://via.placeholder.com/450x330") no-repeat center;
-    background-size: 450px 330px;
-  }
+
+
+
 }
 
 

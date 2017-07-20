@@ -10,7 +10,6 @@
     <title>Our Standards | Auburn Rise | Raising the standards when it comes to multifamily homes</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/animate.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -52,16 +51,9 @@
   <!-- End Facebook Pixel Code -->
   <!-- Webfonts script -->
   <script type="text/javascript" src="MyFontsWebfontsKit.js"></script>
-
-  <script src="js/wow.min.js"></script>
-                <script>
-                new WOW().init();
-                </script>
-
   </head>
-  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
-
+  <body id="skrollr-body" data-spy="scroll" data-target=".navbar-fixed-top">
+    <div id="page-top"></div>
       <!--                  MAIN NAVIGATION
       ======================================================== -->
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -133,28 +125,174 @@
           <p class="p-3 text-justify"> With Logel Homes condos, you get more of the things you love like extra-large premium kitchens, luxury flooring, stainless steel appliances, unique cabinet choices and more. Here are some of the features we offer that you won’t see in other multifamily homes.</p>
         </div>
       </div> <!-- /row -->
+
     </div> <!-- /container -->
 
   <!--                   STANDARDS PANEL
   ======================================================== -->
-  <div class="container standards-container">
+  <div class="container standards-container" >
     <div class="standards-item-container">
-      <div class="standards-item bottom wow fadeOutLeftBig" data-wow-delay=".6s" data-wow-duration="1.2s">1</div>
-      <div class="standards-item top wow fadeInRightBig" data-wow-delay=".1s" data-wow-duration="1.2s">2</div>
+      <div class="standards-item content" data--50-bottom="opacity:1" data-180-top="opacity:0">
+        <img src="../images/standards/windows_icon.png" class="img-fluid" alt="">
+        <h3>WINDOWS THAT WOW</h3>
+        <div class="content_ul">
+          <ul>
+            <li>Extra-large double pane windows and 8 foot wide patio doors offer panoramic views and improved natural light.</li>
+            <!-- <li>Extra-large double pane windows, offering panoramic views and improved natural light</li>
+            <li>8 foot wide patio doors</li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="standards-item windows" data--50-bottom="opacity:0" data-180-top="opacity:1">
+        <div class="content_ul">
+          <ul>
+            <li>Extra-large double pane windows and 8 foot wide patio doors offer panoramic views and improved natural light.</li>
+            <!-- <li>Extra-large double pane windows, offering panoramic views and improved natural light</li>
+            <li>8 foot wide patio doors</li> -->
+          </ul>
+        </div>
+      </div>
     </div>
+    <hr>
     <div class="standards-item-container">
-      <div class="standards-item bottom wow fadeOutLeftBig" data-wow-delay=".6s" data-wow-duration="1.2s">1</div>
-      <div class="standards-item top wow fadeInRightBig" data-wow-delay=".1s" data-wow-duration="1.2s">2</div>
+      <div class="standards-item stainless" data--50-bottom="opacity:0" data-180-top="opacity:1">
+        <div class="content_ul">
+          <ul>
+            <li>Includes stainless steel counter-depth fridge, smooth top stove, dishwasher, and over-the-range microwave hood fan.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="standards-item content" data--50-bottom="opacity:1" data-180-top="opacity:0">
+        <img src="../images/standards/stainless_icon.png" class="img-fluid" alt="">
+        <h3>STAINLESS STEEL APPLIANCES</h3>
+        <div class="content_ul">
+          <ul>
+            <li>Includes stainless steel counter-depth fridge, smooth top stove, dishwasher, and over-the-range microwave hood fan.</li>
+          </ul>
+        </div>
+      </div>
     </div>
+    <hr>
     <div class="standards-item-container">
-      <div class="standards-item bottom wow fadeOutLeftBig" data-wow-delay=".6s" data-wow-duration="1.2s">1</div>
-      <div class="standards-item top wow fadeInRightBig" data-wow-delay=".1s" data-wow-duration="1.2s">2</div>
+      <div class="standards-item content" data--50-bottom="opacity:1" data-180-top="opacity:0">
+        <img src="../images/standards/ceilings_icon.png" class="img-fluid" alt="">
+        <h3>EXTENDED CEILINGS</h3>
+        <div class="content_ul">
+          <ul>
+            <li>Standard 9’ foot ceilings make your home feel spacious and and bright.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="standards-item ceilings" data--50-bottom="opacity:0" data-180-top="opacity:1">
+        <div class="content_ul">
+          <ul>
+            <li>Standard 9’ foot ceilings make your home feel spacious and and bright.</li>
+          </ul>
+        </div>
+      </div>
     </div>
+    <hr>
     <div class="standards-item-container">
-      <div class="standards-item bottom wow fadeOutLeftBig" data-wow-delay=".6s" data-wow-duration="1.2s">1</div>
-      <div class="standards-item top wow fadeInRightBig" data-wow-delay=".1s" data-wow-duration="1.2s">2</div>
+      <div class="standards-item ventilation" data--50-bottom="opacity:0" data-180-top="opacity:1">
+        <div class="content_ul">
+          <ul>
+            <li>Our award winning fresh-air intake system allows for advanced temperature control, better indoor air quality, and improved air-flow.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="standards-item content" data--50-bottom="opacity:1" data-180-top="opacity:0">
+        <img src="../images/standards/ventilation_icon.png" class="img-fluid" alt="">
+        <h3>FRESH-AIR INTAKE SYSTEM</h3>
+        <div class="content_ul">
+          <ul>
+            <li>Our award winning fresh-air intake system allows for advanced temperature control, better indoor air quality, and improved air-flow.</li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
+    <hr>
+    <div class="standards-item-container">
+      <div class="standards-item content" data--50-bottom="opacity:1" data-180-top="opacity:0">
+        <img src="../images/standards/cabinets_icon.png" class="img-fluid" alt="">
+        <h3>PREMIUM CABINETRY</h3>
+        <div class="content_ul">
+          <ul>
+            <li>Soft-close maple doors and drawers are included in every unit, and our spacious cabinets, walk-in pantry and large island provide plenty of space to prepare, dine, and entertain.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="standards-item cabinets" data--50-bottom="opacity:0" data-180-top="opacity:1">
+        <div class="content_ul">
+          <ul>
+            <li>Soft-close maple doors and drawers are included in every unit, and our spacious cabinets, walk-in pantry and large island provide plenty of space to prepare, dine, and entertain.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="standards-item-container">
+      <div class="standards-item finishes" data--50-bottom="opacity:0" data-180-top="opacity:1">
+        <div class="content_ul">
+          <ul>
+            <li>We know you'll be impressed by the quartz countertops, luxury vinyl plank flooring and 4"x16" ceramic tile found in every suite.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="standards-item content" data--50-bottom="opacity:1" data-180-top="opacity:0">
+        <img src="../images/standards/finishes_icon.png" class="img-fluid" alt="">
+        <h3>FINE FINISHES</h3>
+        <div class="content_ul">
+          <ul>
+            <li>We know you'll be impressed by the quartz countertops, luxury vinyl plank flooring and 4"x16" ceramic tile found in every suite.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="standards-item-container">
+      <div class="standards-item content" data--50-bottom="opacity:1" data-180-top="opacity:0">
+        <img src="../images/standards/sound_icon.png" class="img-fluid" alt="">
+        <h3>SOUND ATTENUATION</h3>
+        <div class="content_ul">
+          <ul>
+            <li>Premium sound attenuation reduces sound transmission between suites and ensures your privacy.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="standards-item sound" data--50-bottom="opacity:0" data-180-top="opacity:1">
+        <div class="content_ul">
+          <ul>
+            <li>Premium sound attenuation reduces sound transmission between suites and ensures your privacy.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="standards-item-container">
+      <div class="standards-item lake" data--50-bottom="opacity:0" data-180-top="opacity:1">
+        <div class="content_ul">
+          <ul>
+            <li>Enjoy year-round access to the 43-acre fresh water lake and the Auburn House recreational facilities.</li>
+            <!-- <li>43-acre fresh water lake surrounded by cottage country community</li>
+            <li>Enjoy year round with 4 seasons of activities</li>
+            <li>Access to the Auburn House</li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="standards-item content" data--50-bottom="opacity:1" data-180-top="opacity:0">
+        <img src="../images/standards/lake_icon.png" class="img-fluid" alt="">
+        <h3>LARGE PRIVATE LAKE</h3>
+        <div class="content_ul">
+          <ul>
+            <li>Enjoy year-round access to the 43-acre fresh water lake and the Auburn House recreational facilities.</li>
+            <!-- <li>43-acre fresh water lake surrounded by cottage country community</li>
+            <li>Enjoy year round with 4 seasons of activities</li>
+            <li>Access to the Auburn House</li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+</div>
 
 
   <!--                  SHOWHOME MAP PANEL
@@ -257,7 +395,7 @@
           <div class="col-md-4 col-sm-3 sub-nav">
             <h4>Navigation</h4>
             <ul>
-              <li><a class="sub-nav-item" href="index.html">Top</a></li>
+              <li><a class="sub-nav-item" href="#page-top">Top</a></li>
               <li><a class="sub-nav-item" href="condos.html">Condos</a></li>
               <li><a class="sub-nav-item" href="standards.html">Our Standards</a></li>
               <li><a class="sub-nav-item" href="aboutus.html">About Us</a></li>
@@ -332,8 +470,10 @@
       ga('create', 'UA-98462310-2', 'auto');
       ga('send', 'pageview');
     </script>
-    <script src="js/jquery.slim.min.js" type="text/javascript"></script>
+    <script src="js/jquery.slim.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/skrollr.min.js"></script>
+    <script src="js/scripts.js"></script>
 
     </body>
     </html>

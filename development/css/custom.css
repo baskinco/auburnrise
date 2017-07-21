@@ -895,30 +895,33 @@ video#bgvideo {
 
 /*--                 STANDARDS PANEL
 ============================================================================= */
-
 .standards-container {
-  display: flex;
+  /*display: flex;
   align-items: center;
-  flex-direction: column;
-  margin: 50px auto;
+  flex-direction: column;*/
+
   hr {
     visibility: hidden;
   }
 }
 
 .standards-item-container {
-  display: flex;
+  /*display: flex;
   flex-direction: row;
-  align-items: center;
-  align-content: center;
   justify-content: center;
-  position: relative;
+  position: relative;*/
+  text-align: center;
   height: 350px;
   margin-bottom: 10px;
 }
 
 .standards-item {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
   position: absolute;
+
   text-align: center;
   width: 300px;
   height: 330px;
@@ -2057,6 +2060,10 @@ input.submit-button {
   color: $white;
 }
 
+.conditionsapply {
+  font-style: italic;
+  font-size: .1em;
+}
 
 
 /* REGISTRATION FORM MEDIA =================*/

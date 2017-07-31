@@ -8,12 +8,10 @@
     <meta name="description" content="Auburn Rise is a new 373-unit condominium development located in in the heart of amenity-rich Auburn Bay. Affordable quality condos starting from just $139,900. Available now!">
     <!-- /meta -->
     <title>Auburn Rise | New condo development located in Auburn Bay, SE Calgary</title>
+    <!--Bootstrap CDN -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-
-    <!-- include pop-up -->
-
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -54,7 +52,7 @@
     </noscript>
     <!-- End Facebook Pixel Code -->
     <!-- Webfonts script -->
-    <script type="text/javascript" src="MyFontsWebfontsKit.js"></script>
+    <script src="MyFontsWebfontsKit.js" async></script>
   </head>
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" >
 
@@ -98,24 +96,13 @@
 
   <!--                      JUMBO
   ======================================================== -->
-
-
-      <div class="container-fluid ">
-        <div class="row jumbotron-home">
-          <video id="bgvideo" class="" autoplay loop poster="video/hero_home_lg.jpg" muted="muted" volume="0">
-            <source src="video/hero_home.mp4" type="video/mp4"/>
-          </video>
-        </div>
+    <div class="container-fluid ">
+      <div class="row jumbotron-home">
+        <video id="bgvideo" class="" autoplay loop poster="video/hero_home_lg.jpg" muted="muted" volume="0">
+          <source src="video/hero_home.mp4" type="video/mp4"/>
+        </video>
       </div>
-
-
-<!--    <div class="jumbotron">
-      <div class="container-fluid">
-        <div class="hero-img hero-img-condo">
-        </div>
-      </div>
-    </div>-->
-
+    </div>
   <!--                     CTA TOP
   ======================================================== -->
     <div class="container-fluid">
@@ -274,8 +261,7 @@
           <div class="col-md-8 col-sm-9 register-panel">
 
               <h4 id="register">Register</h4>
-              <p>Sign up to receive Auburn Rise community information and updates. You'll also receive $1000 in free upgrades just for registering. A member of our sales team will contact you within 48 hours.</p>
-              <p class="conditionsapply">* Some conditions apply. Visit Sales Centre or Contact Area Sales Manager for details</p>
+              <p>Sign up to receive Auburn Rise community information and updates. You'll also receive $1000 in free upgrades just for registering. A member of our sales team will contact you within 48 hours.</p><p><span class="conditionsapply">* Some conditions apply. Visit a Sales Centre or an Area Sales Manager for details.</span></p>
 
             <form method="POST" action="https://app.lassocrm.com/registrant_signup/" class="row" data-name="Email Form" id="email-form" name="email-form">
 
@@ -339,10 +325,11 @@
     ======================================================== -->
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+    <script src="../js/ie10-viewport-bug-workaround.js" async></script>
 
     <!--               GOOGLE API SCRIPTS
     ======================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" async></script>
     <script>
       var map;
       function initMap() {
@@ -384,7 +371,7 @@
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByqp0gAdXuZNyQqEyU_6i7YVYSJet6dM4&callback=initMap"
       async defer></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
+
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -393,7 +380,6 @@
       ga('create', 'UA-98462310-2', 'auto');
       ga('send', 'pageview');
     </script>
-    <script src="js/jquery.slim.min.js" type="text/javascript"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js" async></script>
   </body>
 </html>

@@ -1,13 +1,12 @@
 
-
 /*--                  COLOURS
 ======================================================== */
 .ar-aqua {color: #00a9b7;}
 $aqua:        #00a9b7;
 $brown:       #6e2700;
 $brown50:     rgba(110, 39, 0, 0.5);
-$creme:       rgba(209, 201, 185, 0.2);
 $brown10:     rgba(110, 39, 0, 0.1);
+$creme:       rgba(209, 201, 185, 0.2);
 $white:       #fff;
 $dark-grey:   #444b4b;
 $medium-grey: #9EA3A3;
@@ -27,7 +26,6 @@ $light-grey:  #f1f7f7;
   padding: 0;
   display: none;
 }
-
 
 /*--                  FONTS
 ======================================================== */
@@ -139,8 +137,7 @@ a.navbar-brand > img{
 .navbar-nav {
   background-color: $dark-grey;
   margin-top: 0px;
-
-  }
+}
 
 .navbar-toggle {
   margin-top: 25px;

@@ -1940,6 +1940,17 @@ video#bgvideo {
 
 /*--             GENERAL MEDIA QUERIES
 ============================================================================= */
+.back-to-top {
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -43px;
+
+
+}
+
+/*--             GENERAL MEDIA QUERIES
+============================================================================= */
 @media (min-width: 768px) {
   .container {
     width: 680px;

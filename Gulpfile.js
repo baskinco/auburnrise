@@ -60,7 +60,8 @@ gulp.task('webserver', function() {
     gulp.src(dest)
     .pipe(webserver({
         livereload: true,
-        open: true
+        open: true,
+        host: '10.0.4.41'
     }));
 });
 

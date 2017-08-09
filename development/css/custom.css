@@ -29,63 +29,6 @@ $light-grey:  #f1f7f7;
 
 /*--                  FONTS
 ======================================================== */
-/*@import url("//hello.myfonts.net/count/34660a");
-
-@font-face {
-    font-family: 'LubalinGraphStd-Medium';
-    src: url('fonts/LubalinGraphStd-Medium.eot');
-    src: url('fonts/LubalinGraphStd-Medium.eot?#iefix') format('embedded-opentype'),
-         url('fonts/LubalinGraphStd-Medium.woff2') format('woff2'),
-         url('fonts/LubalinGraphStd-Medium.woff') format('woff'),
-         url('fonts/LubalinGraphStd-Medium.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'LubalinGraphStd-Book';
-  src: url('fonts/LubalinGraphStd-Book.eot');
-  src: url('fonts/LubalinGraphStd-Book.eot?#iefix') format('embedded-opentype'),
-      url('fonts/LubalinGraphStd-Book.woff2') format('woff2'),
-      url('fonts/LubalinGraphStd-Book.woff') format('woff'),
-      url('fonts/LubalinGraphStd-Book.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'HelveticaNeueLTStd-Lt';
-  src: url('webfonts/HelveticaNeueLTStd-Lt.eot');
-  src: url('webfonts/HelveticaNeueLTStd-Lt.eot?#iefix') format('embedded-opentype'),
-      url('webfonts/HelveticaNeueLTStd-Lt.woff2') format('woff2'),
-      url('webfonts/HelveticaNeueLTStd-Lt.woff') format('woff'),
-      url('webfonts/HelveticaNeueLTStd-Lt.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'HelveticaNeueLTStd-Th';
-  src: url('fonts/HelveticaNeueLTStd-Th.eot');
-  src: url('fonts/HelveticaNeueLTStd-Th.eot?#iefix') format('embedded-opentype'),
-      url('fonts/HelveticaNeueLTStd-Th.woff2') format('woff2'),
-      url('fonts/HelveticaNeueLTStd-Th.woff') format('woff'),
-      url('fonts/HelveticaNeueLTStd-Th.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'HelveticaNeueLTStd-MdEx';
-  src: url('fonts/HelveticaNeueLTStd-MdEx.eot');
-  src: url('fonts/HelveticaNeueLTStd-MdEx.eot?#iefix') format('embedded-opentype'),
-      url('fonts/HelveticaNeueLTStd-MdEx.woff2') format('woff2'),
-      url('fonts/HelveticaNeueLTStd-MdEx.woff') format('woff'),
-      url('fonts/HelveticaNeueLTStd-MdEx.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'HelveticaNeueLTStd-MdCn';
-  src: url('fonts/HelveticaNeueLTStd-MdCn.eot');
-  src: url('fonts/HelveticaNeueLTStd-MdCn.eot?#iefix') format('embedded-opentype'),
-      url('fonts/HelveticaNeueLTStd-MdCn.woff2') format('woff2'),
-      url('fonts/HelveticaNeueLTStd-MdCn.woff') format('woff'),
-      url('fonts/HelveticaNeueLTStd-MdCn.ttf') format('truetype');
-}*/
-
-
 $neue-light:    'HelveticaNeueLTStd-Lt', Helvetica, sans-serif;
 $neue-thin:     'HelveticaNeueLTStd-Th', Helvetica, sans-serif;
 $neue-med-ext:  'HelveticaNeueLTStd-MdEx', Helvetica, sans-serif;
@@ -93,7 +36,61 @@ $neue-med-cond: 'HelveticaNeueLTStd-MdCn', Helvetica, sans-serif;
 $lubalin-med:   'LubalinGraphStd-Medium', Courier, serif;
 $lubalin-book:  'LubalinGraphStd-Book', Courier, serif;
 
+@import url("//hello.myfonts.net/count/34660a");
 
+@font-face {
+    font-family: 'LubalinGraphStd-Medium';
+    src: url('../fonts/LubalinGraphStd-Medium.eot');
+    src: url('../fonts/LubalinGraphStd-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/LubalinGraphStd-Medium.woff2') format('woff2'),
+         url('../fonts/LubalinGraphStd-Medium.woff') format('woff'),
+         url('../fonts/LubalinGraphStd-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'LubalinGraphStd-Book';
+  src: url('../fonts/LubalinGraphStd-Book.eot');
+  src: url('../fonts/LubalinGraphStd-Book.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/LubalinGraphStd-Book.woff2') format('woff2'),
+       url('../fonts/LubalinGraphStd-Book.woff') format('woff'),
+       url('../fonts/LubalinGraphStd-Book.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'HelveticaNeueLTStd-Lt';
+  src: url('../fonts/HelveticaNeueLTStd-Lt.eot');
+  src: url('../fonts/HelveticaNeueLTStd-Lt.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/HelveticaNeueLTStd-Lt.woff2') format('woff2'),
+       url('../fonts/HelveticaNeueLTStd-Lt.woff') format('woff'),
+       url('../fonts/HelveticaNeueLTStd-Lt.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'HelveticaNeueLTStd-Th';
+  src: url('../fonts/HelveticaNeueLTStd-Th.eot');
+  src: url('../fonts/HelveticaNeueLTStd-Th.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/HelveticaNeueLTStd-Th.woff2') format('woff2'),
+       url('../fonts/HelveticaNeueLTStd-Th.woff') format('woff'),
+       url('../fonts/HelveticaNeueLTStd-Th.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'HelveticaNeueLTStd-MdEx';
+  src: url('../fonts/HelveticaNeueLTStd-MdEx.eot');
+  src: url('../fonts/HelveticaNeueLTStd-MdEx.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/HelveticaNeueLTStd-MdEx.woff2') format('woff2'),
+       url('../fonts/HelveticaNeueLTStd-MdEx.woff') format('woff'),
+       url('../fonts/HelveticaNeueLTStd-MdEx.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'HelveticaNeueLTStd-MdCn';
+  src: url('../fonts/HelveticaNeueLTStd-MdCn.eot');
+  src: url('../fonts/HelveticaNeueLTStd-MdCn.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/HelveticaNeueLTStd-MdCn.woff2') format('woff2'),
+       url('../fonts/HelveticaNeueLTStd-MdCn.woff') format('woff'),
+       url('../fonts/HelveticaNeueLTStd-MdCn.ttf') format('truetype');
+}
 
 /*--                 BASE ELEMENTS
 ============================================================================ */

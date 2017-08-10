@@ -96,7 +96,7 @@ $lubalin-book:  'LubalinGraphStd-Book', Courier, serif;
 ============================================================================ */
 body {
   background-color: $white;
-  padding-top: 32px;
+  padding-top: 22px;
   font-family: $neue-light;
   font-weight: normal;
   font-style: normal;
@@ -172,12 +172,12 @@ video::-webkit-media-controls-panel {width: calc(100% + 30px); /* Adjust as need
   background-color: $white;
 }
 
-.navbar-header {
-  height: 79px;
+.ar-nav-container {
+  height: 70px;
 }
 
-.ar-nav-container {
-  height: 80px;
+.navbar-header {
+  /*height: 70px;*/
 }
 
 .navbar-fixed-top .navbar-brand {
@@ -185,7 +185,7 @@ video::-webkit-media-controls-panel {width: calc(100% + 30px); /* Adjust as need
 }
 
 a.navbar-brand > img{
-  width: 130px;
+  width: 110px;
   padding-top: 5px;
 }
 
@@ -195,7 +195,7 @@ a.navbar-brand > img{
 }
 
 .navbar-toggle {
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 .nav-item {
@@ -2052,15 +2052,13 @@ a.upgrade-nav--item {
   }
 }
 
-/*--             GENERAL MEDIA QUERIES
+/*--             BACK-TO-TOP
 ============================================================================= */
 .back-to-top {
   position: fixed;
   bottom: 0px;
   left: 50%;
   margin-left: -43px;
-
-
 }
 
 /*--             GENERAL MEDIA QUERIES

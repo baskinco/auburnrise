@@ -2057,8 +2057,12 @@ a.upgrade-nav--item {
 .back-to-top {
   position: fixed;
   bottom: 0px;
-  left: 50%;
-  margin-left: -43px;
+  width: 100%;
+  background-color: $dark-grey
+  img {
+    margin-left: -43px;
+    left: 50%;
+  }
 }
 
 /*--             GENERAL MEDIA QUERIES

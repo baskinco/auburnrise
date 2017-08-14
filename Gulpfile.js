@@ -6,14 +6,16 @@ var gulp = require('gulp'),
     htmlmin = require('gulp-htmlmin'),
     cssnano = require('cssnano'),
     image = require('gulp-image'),
+    cache = require('gulp-cached'),
+    plumber = require('gulp-plumber'),
 
     source = 'development/',
     dest = 'production/';
 
 // Optimize images through gulp-image
 gulp.task('imageoptim', function() {
-  gulp.src(source + 'images/**/*.{jpg,JPG}')
-  .pipe(image())
+  gulp.src(source + 'images/**/*.{jpg,JPG,png,PNG,gif,GIF,svg,SVG}')
+  .pipe(cache(image()))
   .pipe(gulp.dest(dest + 'images'));
 });
 
@@ -31,21 +33,20 @@ gulp.task('html', function() {
 // JavaScript
 gulp.task('javascript', function() {
     gulp.src(source + 'JS/*.js')
-    .pipe(gulp.dest(dest + 'JS'));
-
-    gulp.src(source + 'JS/libs/*.js')
-    .pipe(gulp.dest(dest + 'JS/libs/'));
+        .pipe(plumber())
+        .pipe(gulp.dest(dest + 'JS'));
 });
 
 // CSS
 gulp.task('css', function() {
     gulp.src(source + '**/*.css')
-    .pipe(postcss([
-        precss(),
-        autoprefixer(),
-        cssnano()
-    ]))
-    .pipe(gulp.dest(dest));
+        .pipe(plumber())
+        .pipe(postcss([
+            precss(),
+            autoprefixer(),
+            cssnano()
+        ]))
+        .pipe(gulp.dest(dest));
 });
 
 // Watch everything
@@ -53,6 +54,7 @@ gulp.task('watch', function() {
     gulp.watch(source + '**/*.html', ['html']);
     gulp.watch(source + 'JS/**/*.js', ['javascript']);
     gulp.watch(source + '**/*.css', ['css']);
+    gulp.watch(source + 'images/**', ['imageoptim']);
 });
 
 // Run a livereload web server because lazy

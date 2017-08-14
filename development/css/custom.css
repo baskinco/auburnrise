@@ -2057,8 +2057,7 @@ a.upgrade-nav--item {
 .back-to-top {
   position: fixed;
   bottom: 0px;
-  width: 100%;
-  background-color: $dark-grey
+  left: 50%;
   img {
     margin-left: -43px;
     left: 50%;

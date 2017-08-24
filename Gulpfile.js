@@ -14,7 +14,7 @@ var gulp = require('gulp'),
 
 // Optimize images through gulp-image
 gulp.task('imageoptim', function() {
-  gulp.src(source + 'images/**/*.{jpg,JPG,png,PNG,gif,GIF,svg,SVG}')
+  gulp.src(source + 'images/**/*')
   .pipe(cache(image()))
   .pipe(gulp.dest(dest + 'images'));
 });

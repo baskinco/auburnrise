@@ -6,7 +6,7 @@ $aqua:        #00a9b7;
 $brown:       #6e2700;
 $brown50:     rgba(110, 39, 0, 0.5);
 $brown10:     rgba(110, 39, 0, 0.1);
-$creme:       rgba(209, 201, 185, 0.2);
+$creme:       #F5F1F1;
 $white:       #fff;
 $dark-grey:   #444b4b;
 $medium-grey: #9EA3A3;
@@ -311,9 +311,8 @@ a.navbar-brand > img{
 .jumbotron, .jumbotron-home, .jumbotron-condo {
   padding-bottom: 0;
   padding-top: 0;
-/*  border-top: solid 8px $aqua;*/
-  border-bottom: solid 8px $aqua;
   margin-bottom: 0;
+  border-bottom: solid 8px $aqua;
 }
 
 video#bgvideo {
@@ -335,16 +334,12 @@ video#bgvideo {
   height: 200px;
 }
 
-/*.hero-img-condo {
-    background-image:url("../images/condos_01.jpg");
+.hero-img-standards {
+  background-image:url("../images/standard.jpg");
+  background-position: bottom;
 }
 
-.hero-img-tim{
-    background-image:url("../images/timlogel.jpg");
-    background-position: top;
-}*/
-
-.hero-img-standards {
+.hero-img-upgrades {
   background-image:url("../images/standard.jpg");
   background-position: bottom;
 }
@@ -376,6 +371,10 @@ video#bgvideo {
 
   video#bgvideo {
     display:none;
+  }
+
+  .hero-img-upgrades {
+    display: none;
   }
 
 }
@@ -520,59 +519,102 @@ video#bgvideo {
 /*--                 UPGRAYEDD SUBNAV
 ============================================================================ */
 
+
 .upgrade-nav{
   display: flex;
   flex-direction: column;
   width: 100%;
+  /*background-color: $medium-grey;*/
 }
 
 .upgrade-nav--container {
   display: flex;
   flex-grow: 1;
   flex-direction: row;
-  height: 110px;
+  height: 120px;
+  .spacer{
+    border-left: solid 1px $aqua;
+    width: 1px;
+    height: 100%;
+  }
+}
+
+.jumbotron-upgrade {
+  border: none;
+  background-color: $aqua
 }
 
 a.upgrade-nav--item {
   display: inline-block;
   flex-grow: 1;
   height: 100%;
-  min-width: 33%;
+  max-width: 33%;
   margin: 0;
-  padding: 10px;
-  font-size: .9em;
   line-height: 1.2em;
   text-align: center;
-  vertical-align: bottom;
-  background-color: $dark-grey;
-  color: white;
-  border: 1px solid white;
+  /*background-color: $medium-grey;*/
+  color: $creme;
+  /*border: 1px solid white;*/
   text-decoration: none;
+  font-size: 1.1em;
+  padding: 70px 13px 5px 13px;
+  background-size: 45px 45px;
+  background-position: 50% 18%;
+}
+
+a.upgrade-nav--item:hover {
+  background-color: $dark-grey;
+}
+
+
+.appliances-nav {
+  background: url("../images/upgrades/appliances_nav_icon.png") no-repeat;
+}
+.cabinets-nav {
+  background: url("../images/upgrades/cabinets_nav_icon.png") no-repeat;
+}
+.plumbing-nav {
+  background: url("../images/upgrades/plumbing_nav_icon.png") no-repeat;
+}
+.walls-nav {
+  background: url("../images/upgrades/walls_nav_icon.png") no-repeat;
+}
+.lighting-nav {
+  background: url("../images/upgrades/lighting_nav_icon.png") no-repeat;
+}
+.other-nav {
+  background: url("../images/upgrades/other_nav_icon.png") no-repeat;
 }
 
 @media (min-width: 768px) {
   .upgrade-nav{
-    /*flex-direction: row;*/
+    flex-direction: row;
   }
 
   .upgrade-nav--container {
-    height: 135px;
+    height: 100px;
   }
 
   a.upgrade-nav--item {
-    padding: 10px 20px;
-    font-size: 1.1em;
+    font-size: 0.9em;
+    padding: 61px 3px 3px 3px;
+    background-size: 45px 45px;
+    background-position: 50% 18%;
   }
 }
 
 @media (min-width: 992px) {
-  .upgrade-nav{
-    flex-direction: row;
-  }
   .upgrade-nav--container {
-    height: 175px;
+    height: 110px;
+  }
+  a.upgrade-nav--item {
+    font-size: 1.0em;
+    padding: 75px 5px 5px 5px;
+    background-size: 50px 50px;
+    background-position: 50% 25%;
   }
 }
+
 
 
 /*--                 FEATURE
@@ -1331,6 +1373,7 @@ a.upgrade-nav--item {
   width: 1px;
   height: 70%;
 }
+
 
 .unit-header-price {
   width: 100%;

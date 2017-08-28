@@ -8,9 +8,10 @@ $brown50:     rgba(110, 39, 0, 0.5);
 $brown10:     rgba(110, 39, 0, 0.1);
 $creme:       #F5F1F1;
 $white:       #fff;
-$dark-grey:   #444b4b;
-$medium-grey: #9EA3A3;
-$light-grey:  #f1f7f7;
+$dark-grey:   #4B4444;
+$medium-grey: #777979;
+$light-grey: #9EA3A3;
+$ulight-grey:  #f1f7f7;
 
 /*--                  MODAL
 ======================================================== */
@@ -136,7 +137,7 @@ hr {
  	width: 90%;
 
 	height: 50px;
-	border-bottom: 1px solid $light-grey;
+	border-bottom: 1px solid $ulight-grey;
 	box-shadow: 0 15px 15px -20px $dark-grey;
   margin: -40px auto 20px;
 }
@@ -204,7 +205,7 @@ a.navbar-brand > img{
   font-style: normal;
   font-size: 1.0em;
   margin-top: 20px;
-  color:$light-grey;
+  color:$ulight-grey;
   height: 40px;
   text-align: center;
 }
@@ -214,7 +215,7 @@ a.navbar-brand > img{
 }
 
 .nav-item-register {
-   color: $light-grey;
+   color: $ulight-grey;
    visibility: collapse;
    font-family: $lubalin-med;
    font-weight: normal;
@@ -420,8 +421,8 @@ video#bgvideo {
   margin-bottom: 0px;
 }
 
-.cta-top--triangle-lgrey {
-  background-image: url("../images/tri_dwn_15x15_lgrey.png");
+.cta-top--triangle-mgrey {
+  background-image: url("../images/tri_dwn_15x15_mgrey.png");
   top: -50px;
   height: 15px;
   width: 15px;
@@ -526,7 +527,7 @@ video#bgvideo {
   display: flex;
   flex-direction: column;
   width: 100%;
-  /*background-color: $medium-grey;*/
+  /*background-color: $light-grey;*/
 }
 
 .upgrade-nav--container {
@@ -628,7 +629,7 @@ a.upgrade-nav--item:hover {
   min-width: 280px;
   height: 100%;
   background-color: $white;
-  border: 1px $medium-grey solid;
+  border: 1px $light-grey solid;
 /*  -webkit-box-shadow: 0px 3px 10px 0px rgba(120,120,120,.7);
   -moz-box-shadow: 0px 3px 10px 0px rgba(120,120,120,.7);
   box-shadow: 0px 3px 10px 0px rgba(120,120,120,.7);*/

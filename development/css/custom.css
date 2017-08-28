@@ -420,6 +420,14 @@ video#bgvideo {
   margin-bottom: 0px;
 }
 
+.cta-top--triangle-lgrey {
+  background-image: url("../images/tri_dwn_15x15_lgrey.png");
+  top: -50px;
+  height: 15px;
+  width: 15px;
+  margin-bottom: 0px;
+}
+
 .cta-top-btn--container {
   display: flex;
   flex-direction: column-reverse;
@@ -495,13 +503,7 @@ video#bgvideo {
     height: 75px;
   }
 
-  .cta-top--triangle {
-    background-image: url("../images/tri_dwn_15x15.png");
-    top: -50px;
-    height: 15px;
-    width: 15px;
-    margin-bottom: 0px;
-  }
+
 
   .cta-top-btn--container {
     flex-direction: row;
@@ -533,7 +535,7 @@ video#bgvideo {
   flex-direction: row;
   height: 120px;
   .spacer{
-    border-left: solid 1px $aqua;
+    border-left: solid 1px $medium-grey;
     width: 1px;
     height: 100%;
   }
@@ -541,7 +543,7 @@ video#bgvideo {
 
 .jumbotron-upgrade {
   border: none;
-  background-color: $aqua
+  background-color: $medium-grey;
 }
 
 a.upgrade-nav--item {
@@ -552,7 +554,6 @@ a.upgrade-nav--item {
   margin: 0;
   line-height: 1.2em;
   text-align: center;
-  /*background-color: $medium-grey;*/
   color: $creme;
   /*border: 1px solid white;*/
   text-decoration: none;

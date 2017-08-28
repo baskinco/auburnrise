@@ -414,20 +414,19 @@ video#bgvideo {
 }
 
 .cta-top--triangle {
-  background-image: url("../images/tri_dwn_15x15.png");
+  background-image: url("../images/tri_dwn_15x15_aqua.png");
   top: -50px;
   height: 15px;
   width: 15px;
   margin-bottom: 0px;
 }
 
-.cta-top--triangle-mgrey {
+.cta-top--triangle.triangle-mgrey {
   background-image: url("../images/tri_dwn_15x15_mgrey.png");
-  top: -50px;
-  height: 15px;
-  width: 15px;
-  margin-bottom: 0px;
 }
+
+.cta-top--triangle.triangle-brown {
+  background-image: url("../images/tri_dwn_15x15_brown.png");
 
 .cta-top-btn--container {
   display: flex;

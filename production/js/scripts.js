@@ -63,10 +63,10 @@ setTimeout(function(){
 }, 3000);
 
 /* ---------- SKROLLR ---------- */
-
-$(function () {
+$(window.onload = function () {
   // initialize skrollr if the window width is large enough
   if ($(window).width() < 768) {
+
     var s = skrollr.init({
         render: function(data) {
             //Debugging - Log the current scroll position.
@@ -74,7 +74,6 @@ $(function () {
         }
     });
   }
-
   // disable/enable skrollr if the window is resized above/below 767px wide
   $(window).on('resize', function () {
     if ($(window).width() >= 767) {
@@ -84,5 +83,4 @@ $(function () {
       skrollr.init(); // enable if under 768
     }
   });
-
 });

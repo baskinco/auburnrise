@@ -28,10 +28,6 @@ $ulight-grey:  #f1f7f7;
   margin-bottom: 10px;
 }
 
-.upgrade-item-container {
-  margin-bottom: 10px;
-}
-
 .upgrade-header {
   margin-left: auto;
   margin-right: auto;
@@ -71,6 +67,12 @@ $ulight-grey:  #f1f7f7;
   }
 }
 
+.upgrade-item-container {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
 .upgrade-item {
   margin-left: auto;
   margin-right: auto;
@@ -88,10 +90,8 @@ $ulight-grey:  #f1f7f7;
       padding-bottom: 5px;
       font-weight: bold;
       font-size: 1.1em;
-
     }
   }
-
   .upgrade-item--image {
 
   }

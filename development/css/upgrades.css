@@ -37,7 +37,6 @@ $ulight-grey:  #f1f7f7;
   text-align: center;
   width: 300px;
   height: 330px;
-
   img {
     padding-top: 90px;
   }
@@ -71,6 +70,7 @@ $ulight-grey:  #f1f7f7;
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
+
 }
 
 .upgrade-item {
@@ -147,38 +147,10 @@ $ulight-grey:  #f1f7f7;
     position: inherit;
     margin: 0 10px;
   }
-  .windows {
-    background: url(../images/upgrades/windows_full_xs.png) no-repeat center;
-    ul {visibility: hidden;}
+  .upgrade-item {
+    width: 600px;
   }
-  .stainless {
-      background: url(../images/upgrades/stainless_full_xs.png) no-repeat center;
-      ul {visibility: hidden;}
-  }
-  .ceilings {
-      background: url(../images/upgrades/ceilings_full_xs.png) no-repeat center;
-      ul {visibility: hidden;}
-  }
-  .ventilation {
-      background: url(../images/upgrades/ventilation_full_xs.png) no-repeat center;
-      ul {visibility: hidden;}
-  }
-  .cabinets {
-      background: url(../images/upgrades/cabinets_full_xs.png) no-repeat center;
-      ul {visibility: hidden;}
-  }
-  .finishes {
-      background: url(../images/upgrades/finishes_full_xs.png) no-repeat center;
-      ul {visibility: hidden;}
-  }
-  .sound {
-      background: url(../images/upgrades/sound_full_xs.png) no-repeat center;
-      ul {visibility: hidden;}
-  }
-  .lake {
-      background: url(../images/upgrades/lake_full_xs.png) no-repeat center;
-      ul {visibility: hidden;}
-  }
+
 }
 
 @media (min-width: 992px){
@@ -199,49 +171,38 @@ $ulight-grey:  #f1f7f7;
       padding: 5px 15px 0px 15px;
     }
   }
+
+  .upgrade-item {
+    width: 900px;
+  }
+
   .content {
-    background: url(../images/upgrades/stand_items_back_md.png) no-repeat center;
+    background: url(../images/upgrades/up_back_c_md.png) no-repeat center;
     background-size: 450px 330px;
   }
-  .windows {
-    background: url(../images/upgrades/windows_full_md.png) no-repeat center;
+  .appliances {
+    background: url(../images/upgrades/appliances_head_md.jpg) no-repeat center;
     background-size: 450px 330px;
-    ul {visibility: hidden;}
-  }
-  .stainless {
-    background: url(../images/upgrades/stainless_full_md.png) no-repeat center;
-    background-size: 450px 330px;
-    ul {visibility: hidden;}
-  }
-  .ceilings {
-    background: url(../images/upgrades/ceilings_full_md.png) no-repeat center;
-    background-size: 450px 330px;
-    ul {visibility: hidden;}
-  }
-  .ventilation {
-    background: url(../images/upgrades/ventilation_full_md.png) no-repeat center;
-    background-size: 450px 330px;
-    ul {visibility: hidden;}
   }
   .cabinets {
-    background: url(../images/upgrades/cabinets_full_md.png) no-repeat center;
+    background: url(../images/upgrades/cabinets_head_md.jpg) no-repeat center;
     background-size: 450px 330px;
-    ul {visibility: hidden;}
   }
-  .finishes {
-    background: url(../images/upgrades/finishes_full_md.png) no-repeat center;
+  .plumbing {
+    background: url(../images/upgrades/plumbing_head_md.jpg) no-repeat center;
     background-size: 450px 330px;
-    ul {visibility: hidden;}
   }
-  .sound {
-    background: url(../images/upgrades/sound_full_md.png) no-repeat center;
+  .walls {
+    background: url(../images/upgrades/walls_head_md.jpg) no-repeat center;
     background-size: 450px 330px;
-    ul {visibility: hidden;}
   }
-  .lake {
-    background: url(../images/upgrades/lake_full_md.png) no-repeat center;
+  .lighting {
+    background: url(../images/upgrades/lighting_head_md.jpg) no-repeat center;
     background-size: 450px 330px;
-    ul {visibility: hidden;}
+  }
+  .other {
+    background: url(../images/upgrades/other_head_md.jpg) no-repeat center;
+    background-size: 450px 330px;
   }
 }
 
@@ -263,48 +224,35 @@ $ulight-grey:  #f1f7f7;
       padding: 5px 20px 0px 20px;
     }
   }
+  .upgrade-item {
+    width: 1080px;
+  }
   .content {
-    background: url(../images/upgrades/stand_items_back_lg.png) no-repeat center;
+    background: url(../images/upgrades/up_back_c_lg.png) no-repeat center;
     background-size: 545px 400px;
   }
-  .windows {
-    background: url(../images/upgrades/windows_full_lg.png) no-repeat center;
+  .appliances {
+    background: url(../images/upgrades/appliances_head_lg.jpg) no-repeat center;
     background-size: 545px 400px;
-    ul {visibility: hidden;}
-  }
-  .stainless {
-    background: url(../images/upgrades/stainless_full_lg.png) no-repeat center;
-    background-size: 545px 400px;
-    ul {visibility: hidden;}
-  }
-  .ceilings {
-    background: url(../images/upgrades/ceilings_full_lg.png) no-repeat center;
-    background-size: 545px 400px;
-    ul {visibility: hidden;}
-  }
-  .ventilation {
-    background: url(../images/upgrades/ventilation_full_lg.png) no-repeat center;
-    background-size: 545px 400px;
-    ul {visibility: hidden;}
   }
   .cabinets {
-    background: url(../images/upgrades/cabinets_full_lg.png) no-repeat center;
+    background: url(../images/upgrades/cabinets_head_lg.jpg) no-repeat center;
     background-size: 545px 400px;
-    ul {visibility: hidden;}
   }
-  .finishes {
-    background: url(../images/upgrades/finishes_full_lg.png) no-repeat center;
+  .plumbing {
+    background: url(../images/upgrades/plumbing_head_lg.jpg) no-repeat center;
     background-size: 545px 400px;
-    ul {visibility: hidden;}
   }
-  .sound {
-    background: url(../images/upgrades/sound_full_lg.png) no-repeat center;
+  .walls {
+    background: url(../images/upgrades/walls_head_lg.jpg) no-repeat center;
     background-size: 545px 400px;
-    ul {visibility: hidden;}
   }
-  .lake {
-    background: url(../images/upgrades/lake_full_lg.png) no-repeat center;
+  .lighting {
+    background: url(../images/upgrades/lighting_head_lg.jpg) no-repeat center;
     background-size: 545px 400px;
-    ul {visibility: hidden;}
+  }
+  .other {
+    background: url(../images/upgrades/other_head_lg.jpg) no-repeat center;
+    background-size: 545px 400px;
   }
 }

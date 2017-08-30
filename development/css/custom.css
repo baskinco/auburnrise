@@ -104,6 +104,7 @@ body {
   color: $dark-grey;
   line-height: 2em;
   margin-top: 48px;
+  /*margin-bottom: 25px;*/
   overflow-x: hidden;
 }
 
@@ -2101,11 +2102,19 @@ a.upgrade-nav--item:hover {
 ============================================================================= */
 .back-to-top {
   position: fixed;
+  height: 25px;
+  background-color: $dark-grey;
+  width: 100%;
   bottom: 0px;
-  left: 50%;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  /*left: 50%;*/
+  a:hover{
+    text-decoration: none;
+  }
   img {
-    margin-left: -43px;
-    left: 50%;
+    margin-left: -15px;
   }
 }
 

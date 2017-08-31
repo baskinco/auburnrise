@@ -83,11 +83,11 @@ $ulight-grey:  #f1f7f7;
   margin-bottom: 28px;
   .upgrade-item--copy {
     position: relative;
-    color: $brown;
     font-size: 1.2em;
     .upgrade-item--copy--title{
       display: block;
       padding-bottom: 5px;
+      color: $brown;
       font-weight: bold;
       font-size: 1.1em;
     }
@@ -207,12 +207,22 @@ $ulight-grey:  #f1f7f7;
 }
 
 @media (min-width: 1200px){
-  .upgrades-page--container {
+  p.text-justify {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
+  /*.upgrades-page--container {
     hr {visibility: visible; max-width: 1100px;}
+  }
+
+  .upgrade-container {
+
   }
   .upgrade-header {
     margin: 0 10px;
     width: 545px;
+
     h3 {
       font-size: 1.5em;
     }
@@ -255,4 +265,4 @@ $ulight-grey:  #f1f7f7;
     background: url(../images/upgrades/other_head_lg.jpg) no-repeat center;
     background-size: 545px 400px;
   }
-}
+}*/

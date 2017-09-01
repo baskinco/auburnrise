@@ -121,13 +121,13 @@
         <div class="upgrade-nav">
           <div class="upgrade-nav--container">
             <a href="#appliances" class="upgrade-nav--item appliances-nav">Appliances</a>
-            <a href="#page-top" class="upgrade-nav--item cabinets-nav">Counters &amp Cabinets</a>
-            <a href="#page-top" class="upgrade-nav--item plumbing-nav">Plumbing</a>
+            <a href="#cabinets" class="upgrade-nav--item cabinets-nav">Counters &amp Cabinets</a>
+            <a href="#plumbing" class="upgrade-nav--item plumbing-nav">Plumbing</a>
           </div>
           <div class="upgrade-nav--container">
-            <a href="#page-top" class="upgrade-nav--item walls-nav">Walls &amp Flooring</a>
-            <a href="#page-top" class="upgrade-nav--item lighting-nav">Windows &amp Lighting</a>
-            <a href="#page-top" class="upgrade-nav--item other-nav">Other</a>
+            <a href="#walls" class="upgrade-nav--item walls-nav">Walls &amp Flooring</a>
+            <a href="#lighting" class="upgrade-nav--item lighting-nav">Windows &amp Lighting</a>
+            <a href="#other" class="upgrade-nav--item other-nav">Other</a>
           </div>
         </div>
       </div>
@@ -165,7 +165,7 @@
     <div class="container-fluid upgrades-page--container">
       <!-- APPLIANCES -->
       <!--header-->
-      <div class="upgrade-container" id="appliances">
+      <div class="upgrade-container" id="appliances" data-menu-offset="-100">
         <div class="upgrade-header content" data--20-bottom="opacity:0" data-150-top="opacity:1">
           <img src="../images/upgrades/appliances_head_icon.png" class="img-fluid" alt="">
           <h3>APPLIANCES</h3>
@@ -193,11 +193,11 @@
       </div>
       <!--end items list-->
       <!-- END APPLIANCES -->
-      
+
 
       <!-- CABINETS -->
       <!--header-->
-      <div class="upgrade-container">
+      <div class="upgrade-container" id="cabinets" data-menu-offset="-100">
         <div class="upgrade-header content" data--20-bottom="opacity:0" data-150-top="opacity:1">
           <img src="../images/upgrades/cabinets_head_icon.png" class="img-fluid" alt="">
           <h3>COUNTERS &amp CABINETS</h3>
@@ -253,11 +253,11 @@
       </div>
       <!--end items list-->
       <!-- END CABINETS -->
-      
+
 
       <!-- PLUMBING -->
       <!--header-->
-      <div class="upgrade-container">
+      <div class="upgrade-container" id="plumbing" data-menu-offset="-100">
         <div class="upgrade-header content" data--20-bottom="opacity:0" data-150-top="opacity:1">
           <img src="../images/upgrades/plumbing_head_icon.png" class="img-fluid" alt="">
           <h3>PLUMBING</h3>
@@ -306,11 +306,11 @@
       </div>
       <!--end items list-->
       <!-- END PLUMBING -->
-      
+
 
       <!-- WALLS -->
       <!--header-->
-      <div class="upgrade-container">
+      <div class="upgrade-container" id="walls" data-menu-offset="-100">
         <div class="upgrade-header content" data--20-bottom="opacity:0" data-150-top="opacity:1">
           <img src="../images/upgrades/walls_head_icon.png" class="img-fluid" alt="">
           <h3>WALLS &amp FLOORING</h3>
@@ -352,11 +352,11 @@
       </div>
       <!--end items list-->
       <!-- END WALLS  -->
-      
+
 
       <!-- LIGHTING -->
       <!--header-->
-      <div class="upgrade-container">
+      <div class="upgrade-container" id="lighting" data-menu-offset="-100">
         <div class="upgrade-header content" data--20-bottom="opacity:0" data-150-top="opacity:1">
           <img src="../images/upgrades/lighting_head_icon.png" class="img-fluid" alt="">
           <h3>WINDOWS &amp LIGHTING</h3>
@@ -398,11 +398,11 @@
       </div>
       <!--end items list-->
       <!-- END LIGHTING -->
-      
+
 
       <!-- OTHER -->
       <!--header-->
-      <div class="upgrade-container">
+      <div class="upgrade-container" id="other" data-menu-offset="-100">
         <div class="upgrade-header content" data--20-bottom="opacity:0" data-150-top="opacity:1">
           <img src="../images/upgrades/other_head_icon.png" class="img-fluid" alt="">
           <h3>OTHER UPGRADES</h3>
@@ -550,6 +550,7 @@
   <script src="js/jquery.slim.min.js"></script>
   <script src="js/bootstrap.min.js" async></script>
   <script src="js/skrollr.min.js"></script>
+  <script src="js/skrollr.menu.min.js"></script>
   <script src="js/scripts.js"></script>
 
 </body>

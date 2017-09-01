@@ -72,7 +72,8 @@ var skrollrStart = function() {
         if ( _skrollr ) {
             skrollr.refresh();
         } else {
-            skrollr.init();
+            var s = skrollr.init();
+            skrollr.menu.init(s);
         }
     } else {
         if ( _skrollr ) {

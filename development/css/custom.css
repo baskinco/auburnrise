@@ -168,6 +168,8 @@ video::-webkit-media-controls-panel {width: calc(100% + 30px); /* Adjust as need
   padding: 0;
 }
 
+
+
 /*--                 NAV
 ============================================================================= */
 .navbar {
@@ -252,12 +254,16 @@ a.navbar-brand > img{
   }
 
   .nav-item {
+    text-align: center;
     font-size: .9em;
     margin-top: 30px;
-    margin-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
     color: $dark-grey;
     height: 45px;
     text-align: center;
+    width: 100%;
+    min-width: 90px;
   }
 
   .navbar-nav > li > a {

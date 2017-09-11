@@ -204,7 +204,7 @@ a.navbar-brand > img{
   font-family: $lubalin-med;
   font-weight: normal;
   font-style: normal;
-  font-size: 1.0em;
+  font-size: 1.2em;
   margin-top: 20px;
   color:$ulight-grey;
   height: 40px;
@@ -217,10 +217,6 @@ a.navbar-brand > img{
   display: block;
   width: 90%;
   margin: 12px auto;
-}
-
-.navbar-default .navbar-nav>li>a.nav-item:hover {
-  color: $aqua;
 }
 
 .nav-item-register {
@@ -244,17 +240,11 @@ a.navbar-brand > img{
 /* Dropdown ===================================*/
 .dropdown-menu {
   font-family: $lubalin-book;
-  font-size: 11.5px;
   text-align: center;
   box-shadow: none;
   content: '';
   border-radius: 0;
-
   padding-top:0;
-}
-
-.dropdown-menu>li>a {
-  /*padding: 5px auto;*/
 }
 
 .nav>.open>a, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus  {
@@ -265,8 +255,24 @@ a.navbar-brand > img{
   left: 0;
 }
 
+.navbar-nav .open .dropdown-menu>li>a {
+    line-height: 40px;
+}
+
+.navbar-nav .open .dropdown-menu>li:hover {
+    background-color: $aqua;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+  color: $aqua;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+  color: $white;
+}
+
 .dropdown-menu>li>a {
-  background-color: #fff;
+  background-color: $white;
   font-size: 1.1em;
   padding-left: 0;
   padding-right: 0;
@@ -274,6 +280,7 @@ a.navbar-brand > img{
 
 /* NAV MEDIA ==========================*/
 @media (min-width: 768px) {
+  /* Navbar ==================================*/
   .navbar-nav {
     background-color: transparent;
     padding: 0;
@@ -345,6 +352,48 @@ a.navbar-brand > img{
 
   .ar-nav-container {
     height: 110px;
+  }
+
+  /* Dropdown ===================================*/
+  .dropdown-menu {
+    font-family: $lubalin-book;
+    min-width: 95px;
+    text-align: center;
+    top: 70px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid $aqua;
+    box-shadow: none;
+    content: '';
+    border-radius: 0;
+    width: 90%;
+    margin: 12px auto;
+    padding-bottom: 0px;
+  }
+
+  .dropdown-menu>li>a {
+    padding: 5px auto;
+  }
+  .nav>.open>a, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus  {
+    background-color: $white;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+      background-color: $white;
+  }
+  .navbar-right .dropdown-menu {
+    left: 0;
+  }
+  .dropdown-menu>li>a {
+    background-color: $white;
+    font-size: .9em;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: $dark-grey;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+    color: $aqua;
   }
 
 }

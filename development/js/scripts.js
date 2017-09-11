@@ -62,6 +62,7 @@ setTimeout(function(){
   }
 }, 3000);
 
+
 /* --- SKROLLR 2.0 --- */
 
 var skrollrStart = function() {

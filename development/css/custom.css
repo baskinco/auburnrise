@@ -3,6 +3,7 @@
 ======================================================== */
 
 $aqua:        #00a9b7;
+$light-aqua:  #c1e8ec;
 $brown:       #6e2700;
 $brown50:     rgba(110, 39, 0, 0.5);
 $brown10:     rgba(110, 39, 0, 0.1);
@@ -95,6 +96,12 @@ $lubalin-book:  'LubalinGraphStd-Book', Courier, serif;
 
 /*--                 BASE ELEMENTS
 ============================================================================ */
+.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
 body {
   background-color: $white;
   padding-top: 22px;
@@ -363,7 +370,7 @@ a.navbar-brand > img{
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 2px solid $aqua;
+    border-bottom: 3px solid $aqua;
     box-shadow: none;
     content: '';
     border-radius: 0;
@@ -594,16 +601,42 @@ a.upgrade-nav--item:hover {
   flex-direction: column;
   align-items: center;
   height: 125px;
-  background-image: url("../images/bg-blue-lines.png");
-  background-repeat: repeat-x repeat-y;
+  background: repeating-linear-gradient(
+  125deg,
+  $white 0,
+  $light-aqua 1px, $light-aqua .15em,
+  $white calc(.15em + 1px), $white .50em
+  );
+  /*background-image: url("../images/bg-blue-lines.png");
+  background-repeat: repeat-x repeat-y;*/
 }
 
 .cta-top--short {
   display: flex;
   justify-content: center;
   height: 50px;
-  background-image: url("../images/bg-blue-lines.png");
-  background-repeat: repeat-x repeat-y;
+  background: repeating-linear-gradient(
+  125deg,
+  $white 0,
+  $light-aqua 1px, $light-aqua .15em,
+  $white calc(.15em + 1px), $white .50em
+  );
+  /*background-image: url("../images/bg-blue-lines.png");
+  background-repeat: repeat-x repeat-y;*/
+}
+
+.cta-top--short-brown {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  background: repeating-linear-gradient(
+  125deg,
+  $white 0,
+  $creme 1px, $creme .15em,
+  $white calc(.15em + 1px), $white .50em
+  );
+  /*background-image: url("../images/bg-blue-lines.png");
+  background-repeat: repeat-x repeat-y;*/
 }
 
 .cta-top--triangle {

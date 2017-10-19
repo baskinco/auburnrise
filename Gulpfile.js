@@ -63,7 +63,7 @@ gulp.task('webserver', function() {
     .pipe(webserver({
         livereload: true,
         open: true,
-        host: '10.0.4.83'
+        host: '10.0.4.55'
     }));
 });
 

@@ -3,6 +3,7 @@
 ======================================================== */
 
 $aqua:        #00a9b7;
+$aqua-opa:    rgba(10, 75, 80, 0.5);
 $light-aqua:  #c1e8ec;
 $brown:       #6e2700;
 $brown50:     rgba(110, 39, 0, 0.5);
@@ -426,6 +427,10 @@ a.navbar-brand > img{
   border-bottom: solid 8px $aqua;
 }
 
+.jumbotron-home {
+  position: relative;
+}
+
 video#bgvideo {
   min-width: 100%;
   min-height: 100%;
@@ -460,6 +465,53 @@ video#bgvideo {
   background-position: bottom;
 }
 
+.snipe {
+  height: 150px;
+  width: 100%;
+  background-color: $aqua;
+  mix-blend-mode: multiply;
+  bottom: 0px;
+  position: absolute;
+  z-index: 5;
+}
+
+.snipe-txt {
+  height: 150px;
+  width: 100%;
+  text-align: center;
+  bottom: 0px;
+  position: absolute;
+  z-index: 10;
+  border-top:  5px #fff;
+  border-top-style: solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.snipe-hr {
+  width: 40em;
+  height: 2px;
+  border-bottom: 2px #fff;
+  border-bottom-style: solid;
+  margin-bottom: 10px;
+}
+
+.snipe-txt h2 {
+  font-family: $lubalin-med;
+  font-size: 3.6em;
+  line-height: .8em;
+  color: $white;
+  text-align: center;
+}
+
+.snipe-txt p {
+  font-family: $lubalin-book;
+  font-size: 2.0em;
+  color: $white;
+  letter-spacing: .03em;
+}
+
 /* JUMBOTRON MEDIA ==========================*/
 @media (max-width: 767px) {
   .jumbotron {
@@ -467,7 +519,7 @@ video#bgvideo {
   }
 
   .jumbotron-home {
-    height: 220px;
+    height: 260px;
     background: url('../video/hero_home.jpg');
     background-size: cover;
     background-position: center;
@@ -488,6 +540,38 @@ video#bgvideo {
     display: none;
   }
 
+
+  .snipe, .snipe-txt {
+    height: 120px;
+  }
+
+  .snipe-txt {
+    border-top:  2px #fff;
+    border-top-style: solid;
+  }
+
+  .snipe {
+    height: 120px;
+    border-top:  2px #fff;
+    border-top-style: solid;
+  }
+
+  .snipe-hr {
+    width: 20.5em;
+    height: 1px;
+    border-bottom: 1px #fff;
+    border-bottom-style: solid;
+  }
+
+  .snipe-txt h2 {
+    font-size: 1.85em;
+    line-height: .7em;
+  }
+
+  .snipe-txt p {
+    font-size: 1.05em;
+    letter-spacing: .01em;
+  } 
 }
 
 @media (min-width: 768px) {

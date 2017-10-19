@@ -571,7 +571,7 @@ video#bgvideo {
   .snipe-txt p {
     font-size: 1.05em;
     letter-spacing: .01em;
-  } 
+  }
 }
 
 @media (min-width: 768px) {
@@ -1863,6 +1863,17 @@ a.upgrade-nav--item:hover {
 ============================================================================ */
 .heritage-panel {
   margin: 60px 0;
+}
+
+/*--              SITE MAP PANEL
+============================================================================ */
+
+.sitemap {
+  margin-top: 40px;
+}
+
+a svg:hover #download{
+  fill: #00a9b7;
 }
 
 /*--              COMMUNITY VIDEO

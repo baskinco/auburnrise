@@ -154,162 +154,148 @@
 
   <!--                   CONDO PREVIEW PANEL
   ======================================================== -->
-    <div class="container condo-container">
+    <div class="filter">
+    <h3>Filter</h3>
+      <form name="filter" action="">
+        <p>
+          <input id="slider" type="range" min="500" max="1200" step="100" value="1200" onchange="printValue('slider','rangeValue')"/>
+          <input id="rangeValue" type="text" size="5"/>
+        </p>
+      </form>
+    </div>
 
-        <div class="row"> <!-- first row -->
-          <div class="col-sm-6"> <!-- JACKSON -->
-            <div class="condo-box col-centered">
-              <a href="unit_jackson.html">
-                <div class="condo-box-top condo-box--b89">
-                </div>
-              </a>
-              <div class="condo-box-bottom">
-                <p>Two BDRM condo<br>starting from</p>
-                <div class="condo-box-bottom--price">
-                  <p><span class="condo-box-bottom--dollar">$</span>264 </p>
-                </div>
-              </div>
-            </div>
-        </div>
-        <div class="col-sm-6"> <!-- NICHOLL-->
-          <div class="condo-box col-centered">
-            <a href="unit_nicholl.html">
-              <div class="condo-box-top condo-box--b80">
-              </div>
-            </a>
-            <div class="condo-box-bottom">
-              <p>Two BDRM condo<br>starting from</p>
-              <div class="condo-box-bottom--price">
-                <p><span class="condo-box-bottom--dollar">$</span>239 </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> <!-- /first row -->
 
-    <div class="row"> <!-- second row -->
-      <div class="col-sm-6"> <!-- ATWOOD -->
-          <div class="condo-box col-centered">
-            <a href="unit_atwood.html">
-              <div class="condo-box-top condo-box--h10">
-              </div>
-            </a>
-            <div class="condo-box-bottom">
-              <p>Two BDRM condo<br>starting from</p>
-              <div class="condo-box-bottom--price">
-                <p><span class="condo-box-bottom--dollar">$</span>282 </p>
-              </div>
-            </div>
+    <div class="container condo-container" id="condos">
+      <!-- JACKSON -->
+      <div class="condo-box col-centered" id="jackson">
+        <a href="unit_jackson.html">
+          <div class="condo-box-top condo-box--b89">
           </div>
-      </div>
-      <div class="col-sm-6"> <!-- COHEN -->
-        <div class="condo-box col-centered">
-          <a href="unit_cohen.html">
-            <div class="condo-box-top condo-box--h97">
-            </div>
-          </a>
-          <div class="condo-box-bottom">
-            <p>Two BDRM condo<br>starting from</p>
-            <div class="condo-box-bottom--price">
-              <p><span class="condo-box-bottom--dollar">$</span>279 </p>
-            </div>
+        </a>
+        <div class="condo-box-bottom">
+          <p>Two BDRM condo<br>starting from</p>
+          <div class="condo-box-bottom--price">
+            <p><span class="condo-box-bottom--dollar">$</span>264 </p>
           </div>
         </div>
       </div>
-    </div> <!-- /second row -->
-
-    <div class="row"> <!-- third row -->
-      <div class="col-sm-6"> <!-- CURNOE -->
-          <div class="condo-box col-centered">
-            <a href="unit_curnoe.html">
-              <div class="condo-box-top condo-box--j57">
-              </div>
-            </a>
-            <div class="condo-box-bottom">
-              <p>Two BDRM condo<br>starting from</p>
-              <div class="condo-box-bottom--price">
-                <p><span class="condo-box-bottom--dollar">$</span>169 </p>
-              </div>
-            </div>
+      <!-- NICHOLL-->
+      <div class="condo-box col-centered" id="nicholl">
+        <a href="unit_nicholl.html">
+          <div class="condo-box-top condo-box--b80">
           </div>
-      </div>
-      <div class="col-sm-6"> <!-- RICHLER -->
-        <div class="condo-box col-centered">
-          <a href="unit_richler.html">
-            <div class="condo-box-top condo-box--k62">
-            </div>
-          </a>
-          <div class="condo-box-bottom">
-            <p>Two BDRM condo<br>starting from</p>
-            <div class="condo-box-bottom--price">
-              <p><span class="condo-box-bottom--dollar">$</span>189 </p>
-            </div>
+        </a>
+        <div class="condo-box-bottom">
+          <p>Two BDRM condo<br>starting from</p>
+          <div class="condo-box-bottom--price">
+            <p><span class="condo-box-bottom--dollar">$</span>239 </p>
           </div>
         </div>
       </div>
-    </div> <!-- /third row -->
-
-    <div class="row"> <!-- CARR -->
-      <div class="col-sm-6"> <!-- l54 -->
-          <div class="condo-box col-centered">
-            <a href="unit_carr.html">
-              <div class="condo-box-top condo-box--l54">
-              </div>
-            </a>
-            <div class="condo-box-bottom">
-              <p>One BDRM condo<br>starting from</p>
-              <div class="condo-box-bottom--price">
-                <p><span class="condo-box-bottom--dollar">$</span>139 </p>
-              </div>
-            </div>
+      <!-- ATWOOD -->
+      <div class="condo-box col-centered" id="atwood">
+        <a href="unit_atwood.html">
+          <div class="condo-box-top condo-box--h10">
           </div>
-      </div>
-      <div class="col-sm-6"> <!-- MITCHELL -->
-        <div class="condo-box col-centered">
-          <a href="unit_mitchell.html">
-            <div class="condo-box-top condo-box--m70">
-            </div>
-          </a>
-          <div class="condo-box-bottom">
-            <p>Two BDRM condo<br>starting from</p>
-            <div class="condo-box-bottom--price">
-              <p><span class="condo-box-bottom--dollar">$</span>199 </p>
-            </div>
+        </a>
+        <div class="condo-box-bottom">
+          <p>Two BDRM condo<br>starting from</p>
+          <div class="condo-box-bottom--price">
+            <p><span class="condo-box-bottom--dollar">$</span>282 </p>
           </div>
         </div>
       </div>
-    </div> <!-- /fourth row -->
-
-    <div class="row"> <!-- fifth row -->
-      <div class="col-sm-6"> <!-- FINDLAY -->
-          <div class="condo-box col-centered">
-            <a href="unit_findlay.html">
-              <div class="condo-box-top condo-box--m74">
-              </div>
-            </a>
-            <div class="condo-box-bottom">
-              <p>Two BDRM condo<br>starting from</p>
-              <div class="condo-box-bottom--price">
-                <p><span class="condo-box-bottom--dollar">$</span>217 </p>
-              </div>
-            </div>
+      <!-- COHEN -->
+      <div class="condo-box col-centered" id="cohen">
+        <a href="unit_cohen.html">
+          <div class="condo-box-top condo-box--h97">
           </div>
-      </div>
-      <div class="col-sm-6"> <!-- LAWRENCE -->
-        <div class="condo-box col-centered">
-          <a href="unit_lawrence.html">
-            <div class="condo-box-top condo-box--n46">
-            </div>
-          </a>
-          <div class="condo-box-bottom">
-            <p>One BDRM condo<br>starting from</p>
-            <div class="condo-box-bottom--price">
-              <p><span class="condo-box-bottom--dollar">$</span>139 </p>
-            </div>
+        </a>
+        <div class="condo-box-bottom">
+          <p>Two BDRM condo<br>starting from</p>
+          <div class="condo-box-bottom--price">
+            <p><span class="condo-box-bottom--dollar">$</span>279 </p>
           </div>
         </div>
       </div>
-    </div> <!-- /fifth row -->
+      <!-- CURNOE -->
+      <div class="condo-box col-centered" id="curnoe">
+        <a href="unit_curnoe.html">
+          <div class="condo-box-top condo-box--j57">
+          </div>
+        </a>
+        <div class="condo-box-bottom">
+          <p>Two BDRM condo<br>starting from</p>
+          <div class="condo-box-bottom--price">
+            <p><span class="condo-box-bottom--dollar">$</span>169 </p>
+          </div>
+        </div>
+      </div>
+      <!-- RICHLER -->
+      <div class="condo-box col-centered" id="richler">
+        <a href="unit_richler.html">
+          <div class="condo-box-top condo-box--k62">
+          </div>
+        </a>
+        <div class="condo-box-bottom">
+          <p>Two BDRM condo<br>starting from</p>
+          <div class="condo-box-bottom--price">
+            <p><span class="condo-box-bottom--dollar">$</span>189 </p>
+          </div>
+        </div>
+      </div>
+      <!-- CARR --><!-- l54 -->
+      <div class="condo-box col-centered" id="carr">
+        <a href="unit_carr.html">
+          <div class="condo-box-top condo-box--l54">
+          </div>
+        </a>
+        <div class="condo-box-bottom">
+          <p>One BDRM condo<br>starting from</p>
+          <div class="condo-box-bottom--price">
+            <p><span class="condo-box-bottom--dollar">$</span>139 </p>
+          </div>
+        </div>
+      </div>
+      <!-- MITCHELL -->
+      <div class="condo-box col-centered" id="mitchell">
+        <a href="unit_mitchell.html">
+          <div class="condo-box-top condo-box--m70">
+          </div>
+        </a>
+        <div class="condo-box-bottom">
+          <p>Two BDRM condo<br>starting from</p>
+          <div class="condo-box-bottom--price">
+            <p><span class="condo-box-bottom--dollar">$</span>199 </p>
+          </div>
+        </div>
+      </div>
+      <!-- FINDLAY -->
+      <div class="condo-box col-centered" id="findlay">
+        <a href="unit_findlay.html">
+          <div class="condo-box-top condo-box--m74">
+          </div>
+        </a>
+        <div class="condo-box-bottom">
+          <p>Two BDRM condo<br>starting from</p>
+          <div class="condo-box-bottom--price">
+            <p><span class="condo-box-bottom--dollar">$</span>217 </p>
+          </div>
+        </div>
+      </div>
+      <!-- LAWRENCE -->
+    <div class="condo-box col-centered" id="lawrence">
+      <a href="unit_lawrence.html">
+        <div class="condo-box-top condo-box--n46">
+        </div>
+      </a>
+      <div class="condo-box-bottom">
+        <p>One BDRM condo<br>starting from</p>
+        <div class="condo-box-bottom--price">
+          <p><span class="condo-box-bottom--dollar">$</span>139 </p>
+        </div>
+      </div>
+    </div>
   </div><!-- /container -->
 
     <!--                    FOOTER
@@ -412,7 +398,41 @@
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
       <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
+      <script>
+        function printValue(sliderID, textbox) {
+          var x = document.getElementById(textbox);
+          var y = document.getElementById(sliderID);
+          x.value = y.value;
+        }
+        window.onload = function() { printValue('slider','rangeValue')}
+      </script>
 
+      <script>
+        $('#jackson').data({ id:1, sqft:897 });
+        $('#nicholl').data({ id:2, sqft:808 });
+        $('#atwood').data({ id:3, sqft:1020 });
+        $('#cohen').data({ id:4, sqft:976 });
+        $('#curnoe').data({ id:5, sqft:572 });
+        $('#richler').data({ id:6, sqft:624 });
+        $('#carr').data({ id:7, sqft:544 });
+        $('#mitchell').data({ id:8, sqft:705 });
+        $('#findlay').data({ id:9, sqft:747 });
+        $('#lawrence').data({ id:10, sqft:467 });
+
+        $(document).ready(function() {
+          var theValue;
+          $('#slider').change(function() {
+            theValue = $('#rangeValue').val();
+            filterItems(theValue);
+          });
+        });
+
+        function filterItems(sqftCriteria) {
+          $.each($('#condos div'), function(i,item) {
+            $item = $(item);
+          })
+        }
+      </script>
 
 
     </body>

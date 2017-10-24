@@ -156,7 +156,7 @@
   ======================================================== -->
     <div class="filter">
     <h3>Filter</h3>
-      <form name="filter" action="">
+      <form name="filter" method="post" action="">
         <p>
           <input id="slider" type="range" min="500" max="1200" step="100" value="1200" onchange="printValue('slider','rangeValue')"/>
           <input id="rangeValue" type="text" size="5"/>
@@ -165,7 +165,7 @@
     </div>
 
 
-    <div class="container condo-container" id="condos">
+    <div id="condos" class="container condo-container" >
       <!-- JACKSON -->
       <div class="condo-box col-centered" id="jackson">
         <a href="unit_jackson.html">
@@ -395,8 +395,8 @@
       </script>
 
       <script src="js/bootstrap.min.js" async></script>
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-      <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
       <script>
         function printValue(sliderID, textbox) {
@@ -408,6 +408,7 @@
       </script>
 
       <script>
+      // Set sqft values for units
         $('#jackson').data({ id:1, sqft:897 });
         $('#nicholl').data({ id:2, sqft:808 });
         $('#atwood').data({ id:3, sqft:1020 });
@@ -419,21 +420,33 @@
         $('#findlay').data({ id:9, sqft:747 });
         $('#lawrence').data({ id:10, sqft:467 });
 
+      // Link range to units
         $(document).ready(function() {
           var theValue;
-          $('#slider').change(function() {
-            theValue = $('#rangeValue').val();
+
+          $("#slider").change(function() {
+            theValue = $("#rangeValue").val();
             filterItems(theValue);
           });
         });
 
-        function filterItems(sqftCriteria) {
-          $.each($('#condos div'), function(i,item) {
+        function filterItems(sqftCriteria)
+        {
+          $.each($('.condo-box'), function(i, item) {
             $item = $(item);
-          })
+            itemData = $item.data();
+      			if(itemData.sqft <= sqftCriteria)
+      			{
+      				$item.css("display","flex");
+      				itemData.matching = true;
+      			}
+      			else
+      			{
+      				$item.css("display","none");
+      				itemData.matching = false;
+      			}
+          });
         }
       </script>
-
-
     </body>
   </html>

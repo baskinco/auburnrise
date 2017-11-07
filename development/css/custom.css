@@ -498,6 +498,7 @@ video#bgvideo {
 }
 
 .snipe-txt h2 {
+  padding-top: 20px;
   font-family: $lubalin-med;
   font-size: 3.6em;
   line-height: .8em;
@@ -546,6 +547,7 @@ video#bgvideo {
   }
 
   .snipe-txt {
+    padding-top: 20px;
     border-top:  2px #fff;
     border-top-style: solid;
   }
@@ -564,6 +566,7 @@ video#bgvideo {
   }
 
   .snipe-txt h2 {
+
     font-size: 1.85em;
     line-height: .7em;
   }

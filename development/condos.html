@@ -154,16 +154,20 @@
 
   <!--                   CONDO PREVIEW PANEL
   ======================================================== -->
-    <div class="filter">
+    <div class="container filter">
     <h3>Filter</h3>
       <form name="filter" method="post" action="">
+        <p>Bedrooms
+          <input id="1bdrm" type="checkbox" value="1bdrm"/>1 Bedroom
+          <input id="2bdrm" type="checkbox" value="2bdrm"/>2 Bedroom
+        </p>
         <p>
           <input id="slider" type="range" min="500" max="1200" step="100" value="1200" onchange="printValue('slider','rangeValue')"/>
           <input id="rangeValue" type="text" size="5"/>
         </p>
       </form>
     </div>
-    <div id="condos" class="container condo-container" >
+    <div id="condos" class="container condo-container">
       <!-- JACKSON -->
       <div class="condo-box col-centered" id="jackson">
         <a href="unit_jackson.html">
@@ -407,16 +411,16 @@
 
       <script>
       // Set sqft values for units
-        $('#jackson').data({ id:1, sqft:897 });
-        $('#nicholl').data({ id:2, sqft:808 });
-        $('#atwood').data({ id:3, sqft:1020 });
-        $('#cohen').data({ id:4, sqft:976 });
-        $('#curnoe').data({ id:5, sqft:572 });
-        $('#richler').data({ id:6, sqft:624 });
-        $('#carr').data({ id:7, sqft:544 });
-        $('#mitchell').data({ id:8, sqft:705 });
-        $('#findlay').data({ id:9, sqft:747 });
-        $('#lawrence').data({ id:10, sqft:467 });
+        $('#jackson').data({ id:1, sqft:897, bdrms:2});
+        $('#nicholl').data({ id:2, sqft:808, bdrms:2 });
+        $('#atwood').data({ id:3, sqft:1020, bdrms:2 });
+        $('#cohen').data({ id:4, sqft:976, bdrms:2 });
+        $('#curnoe').data({ id:5, sqft:572, bdrms:2 });
+        $('#richler').data({ id:6, sqft:624, bdrms:2 });
+        $('#carr').data({ id:7, sqft:544, bdrms:1 });
+        $('#mitchell').data({ id:8, sqft:705, bdrms:2 });
+        $('#findlay').data({ id:9, sqft:747, bdrms:2 });
+        $('#lawrence').data({ id:10, sqft:467, bdrms:1 });
 
       // Link range to units
         $(document).ready(function() {

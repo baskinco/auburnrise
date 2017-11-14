@@ -162,7 +162,7 @@
           <input id="2bdrm" type="checkbox" value="2bdrm"/>2 Bedroom
         </p>
         <p>
-          <input id="slider" type="range" min="500" max="1200" step="100" value="1200" onchange="printValue('slider','rangeValue')"/>
+          <input id="slider" type="range" min="600" max="1200" step="100" value="1200" onchange="printValue('slider','rangeValue')"/>
           <input id="rangeValue" type="text" size="5"/>
         </p>
       </form>
@@ -422,71 +422,70 @@
         $('#findlay').data({ id:9, sqft:747, bdrms:2 });
         $('#lawrence').data({ id:10, sqft:467, bdrms:1 });
 
-      // Link range to units
-      //   $(document).ready(function() {
-      //     var theValue;
-      //
-      //     $("#slider").change(function() {
-      //       theValue = $("#rangeValue").val();
-      //       filterItems(theValue);
-      //     });
-      //
-      //   });
-      //
-      //   function filterItems(sqftCriteria)
-      //   {
-      //     $.each($('.condo-box'), function(i, item) {
-      //       $item = $(item);
-      //       itemData = $item.data();
-      // 			if(itemData.sqft <= sqftCriteria)
-      // 			{
-      // 				$item.css("display","flex");
-      // 				itemData.matching = true;
-      // 			}
-      // 			else
-      // 			{
-      // 				$item.css("display","none");
-      // 				itemData.matching = false;
-      // 			}
-      //     });
-      //   }
 
-      // Link bdrms to units
+        $(document).ready(function() {
+          //check to see if bdrm checkboxes are checked
+          $("#1bdrm, #2bdrm").click(function() {
+            var bdrm1 = false;
+            var bdrm2 = false;
+            if($("#1bdrm").is(':checked')){
+              bdrm1 = true;
+            }
+            if ($("#2bdrm").is(':checked')){
+              bdrm2 = true;
+            }
+            filterItems(bdrm1, bdrm2);
+          });
 
-      $(document).ready(function() {
-        $("#1bdrm").click(function() {
-        	if($(this).is(':checked')){
-          	filterItems();
-          } else {
-          	resetAll();
-          }
+          // Link sqft slider range to condo sqft
+          $("#slider").change(function() {
+            var theValue;
+            theValue = $("#rangeValue").val();
+            filterBySqft(theValue);
+          });
         });
-      });
 
-      function filterItems()
+      //filter condos based on sqft slider postition
+      function filterBySqft(sqftCriteria)
       {
-        $.each($('.condo-box'), function() {
-          $this = $(this);
-          bdrmData = $this.data();
-          if(bdrmData.bdrms == 1){
-            $this.show();
-            bdrmData.matching = true;
-          } else {
-            $this.hide();
-            bdrmData.matching = false;
+        $.each($('.condo-box'), function(i, item) {
+          $item = $(item);
+          itemData = $item.data();
+          if(itemData.sqft <= sqftCriteria)
+          {
+            $item.css("display","flex");
+            itemData.matching = true;
+          }
+          else
+          {
+            $item.css("display","none");
+            itemData.matching = false;
           }
         });
       }
 
-      function resetAll()
-      {
+      //filter condos based on bdrm checkbox states
+      function filterItems(bdrm1, bdrm2){
         $.each($('.condo-box'), function() {
-        	$this = $(this);
-          if($this.is(":hidden")){
-          	$this.show();
+          $this = $(this);
+          bdrmData = $this.data();
+          if(bdrm1 && !bdrm2){
+            if (bdrmData.bdrms == 1){
+              $this.show();
+            } else {
+              $this.hide();
+            }
+          } else if(bdrm2 && !bdrm1){
+            if (bdrmData.bdrms == 2){
+              $this.show();
+            } else {
+              $this.hide();
+            }
+          } else {
+            $this.show();
           }
         });
-       }
+      }
 
       </script>
     </body>

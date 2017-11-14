@@ -410,8 +410,8 @@
       </script>
 
       <script>
-      // Set sqft values for units
-        $('#jackson').data({ id:1, sqft:897, bdrms:2});
+      // Set values for units
+        $('#jackson').data({ id:1, sqft:897, bdrms:2 });
         $('#nicholl').data({ id:2, sqft:808, bdrms:2 });
         $('#atwood').data({ id:3, sqft:1020, bdrms:2 });
         $('#cohen').data({ id:4, sqft:976, bdrms:2 });
@@ -423,32 +423,71 @@
         $('#lawrence').data({ id:10, sqft:467, bdrms:1 });
 
       // Link range to units
-        $(document).ready(function() {
-          var theValue;
+      //   $(document).ready(function() {
+      //     var theValue;
+      //
+      //     $("#slider").change(function() {
+      //       theValue = $("#rangeValue").val();
+      //       filterItems(theValue);
+      //     });
+      //
+      //   });
+      //
+      //   function filterItems(sqftCriteria)
+      //   {
+      //     $.each($('.condo-box'), function(i, item) {
+      //       $item = $(item);
+      //       itemData = $item.data();
+      // 			if(itemData.sqft <= sqftCriteria)
+      // 			{
+      // 				$item.css("display","flex");
+      // 				itemData.matching = true;
+      // 			}
+      // 			else
+      // 			{
+      // 				$item.css("display","none");
+      // 				itemData.matching = false;
+      // 			}
+      //     });
+      //   }
 
-          $("#slider").change(function() {
-            theValue = $("#rangeValue").val();
-            filterItems(theValue);
-          });
+      // Link bdrms to units
+
+      $(document).ready(function() {
+        $("#1bdrm").click(function() {
+        	if($(this).is(':checked')){
+          	filterItems();
+          } else {
+          	resetAll();
+          }
         });
+      });
 
-        function filterItems(sqftCriteria)
-        {
-          $.each($('.condo-box'), function(i, item) {
-            $item = $(item);
-            itemData = $item.data();
-      			if(itemData.sqft <= sqftCriteria)
-      			{
-      				$item.css("display","flex");
-      				itemData.matching = true;
-      			}
-      			else
-      			{
-      				$item.css("display","none");
-      				itemData.matching = false;
-      			}
-          });
-        }
+      function filterItems()
+      {
+        $.each($('.condo-box'), function() {
+          $this = $(this);
+          bdrmData = $this.data();
+          if(bdrmData.bdrms == 1){
+            $this.show();
+            bdrmData.matching = true;
+          } else {
+            $this.hide();
+            bdrmData.matching = false;
+          }
+        });
+      }
+
+      function resetAll()
+      {
+        $.each($('.condo-box'), function() {
+        	$this = $(this);
+          if($this.is(":hidden")){
+          	$this.show();
+          }
+        });
+       }
+
       </script>
     </body>
   </html>

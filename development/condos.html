@@ -434,7 +434,7 @@
             if ($("#2bdrm").is(':checked')){
               bdrm2 = true;
             }
-            filterItems(bdrm1, bdrm2);
+            filterByBdrms(bdrm1, bdrm2);
           });
 
           // Link sqft slider range to condo sqft
@@ -448,24 +448,20 @@
       //filter condos based on sqft slider postition
       function filterBySqft(sqftCriteria)
       {
-        $.each($('.condo-box'), function(i, item) {
-          $item = $(item);
-          itemData = $item.data();
-          if(itemData.sqft <= sqftCriteria)
-          {
-            $item.css("display","flex");
-            itemData.matching = true;
+        $.each($('.condo-box'), function() {
+          $this = $(this);
+          itemData = $this.data();
+          if(itemData.sqft <= sqftCriteria){
+            $this.show();
           }
-          else
-          {
-            $item.css("display","none");
-            itemData.matching = false;
+          else {
+            $this.hide();
           }
         });
       }
 
       //filter condos based on bdrm checkbox states
-      function filterItems(bdrm1, bdrm2){
+      function filterByBdrms(bdrm1, bdrm2){
         $.each($('.condo-box'), function() {
           $this = $(this);
           bdrmData = $this.data();

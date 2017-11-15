@@ -401,15 +401,6 @@
       <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
       <script>
-        function printValue(sliderID, textbox) {
-          var x = document.getElementById(textbox);
-          var y = document.getElementById(sliderID);
-          x.value = y.value;
-        }
-        window.onload = function() { printValue('slider','rangeValue')}
-      </script>
-
-      <script>
       // Set values for units
         $('#jackson').data({ id:1, sqft:897, bdrms:2 });
         $('#nicholl').data({ id:2, sqft:808, bdrms:2 });
@@ -424,6 +415,7 @@
 
 
         $(document).ready(function() {
+          printValue('slider','rangeValue')
           //check to see if bdrm checkboxes are checked
           $("#1bdrm, #2bdrm").click(function() {
             var bdrm1 = false;
@@ -445,13 +437,21 @@
           });
         });
 
+
+      function printValue(sliderID, textbox) {
+        var x = document.getElementById(textbox);
+        var y = document.getElementById(sliderID);
+        x.value = y.value;
+      }
+
+
       //filter condos based on sqft slider postition
       function filterBySqft(sqftCriteria)
       {
         $.each($('.condo-box'), function() {
           $this = $(this);
-          itemData = $this.data();
-          if(itemData.sqft <= sqftCriteria){
+          sqftData = $this.data();
+          if(sqftData.sqft <= sqftCriteria){
             $this.show();
           }
           else {
@@ -482,7 +482,6 @@
           }
         });
       }
-
       </script>
     </body>
   </html>

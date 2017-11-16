@@ -413,75 +413,72 @@
         $('#findlay').data({ id:9, sqft:747, bdrms:2 });
         $('#lawrence').data({ id:10, sqft:467, bdrms:1 });
 
-
         $(document).ready(function() {
-          printValue('slider','rangeValue')
-          //check to see if bdrm checkboxes are checked
-          $("#1bdrm, #2bdrm").click(function() {
+          //print slider value to slider textbox
+          printValue('slider','rangeValue');
+
+          //when a bdrm box is checked ..
+          $("#1bdrm, #2bdrm").click(function(){
+            getValues();
+          });
+
+          //when the slider is moved
+          $("#slider").change(function() {
+            getValues();
+          });
+        });
+
+          //make slider textbox equal to slider value
+          function printValue(sliderID, textbox) {
+            var x = document.getElementById(textbox);
+            var y = document.getElementById(sliderID);
+            x.value = y.value;
+          }
+
+
+          //get bdrm and slider values
+          function getValues() {
             var bdrm1 = false;
             var bdrm2 = false;
+            var sliderValue;
+
             if($("#1bdrm").is(':checked')){
               bdrm1 = true;
             }
             if ($("#2bdrm").is(':checked')){
               bdrm2 = true;
             }
-            filterByBdrms(bdrm1, bdrm2);
-          });
+            sliderValue = $("#rangeValue").val();
 
-          // Link sqft slider range to condo sqft
-          $("#slider").change(function() {
-            var sliderRangeValue;
-            sliderRangeValue = $("#rangeValue").val();
-            filterBySqft(sliderRangeValue);
-          });
-        });
-
-
-      function printValue(sliderID, textbox) {
-        var x = document.getElementById(textbox);
-        var y = document.getElementById(sliderID);
-        x.value = y.value;
-      }
-
-
-      //filter condos based on sqft slider postition
-      function filterBySqft(sqftCriteria)
-      {
-        $.each($('.condo-box'), function() {
-          $this = $(this);
-          sqftData = $this.data();
-          if(sqftData.sqft <= sqftCriteria){
-            $this.show();
+            runFilter(bdrm1, bdrm2, sliderValue);
           }
-          else {
-            $this.hide();
-          }
-        });
-      }
 
-      //filter condos based on bdrm checkbox states
-      function filterByBdrms(bdrm1, bdrm2){
-        $.each($('.condo-box'), function() {
-          $this = $(this);
-          bdrmData = $this.data();
-          if(bdrm1 && !bdrm2){
-            if (bdrmData.bdrms == 1){
-              $this.show();
-            } else {
-              $this.hide();
-            }
-          } else if(bdrm2 && !bdrm1){
-            if (bdrmData.bdrms == 2){
-              $this.show();
-            } else {
-              $this.hide();
-            }
-          } else {
-            $this.show();
+          function runFilter(bdrm1, bdrm2, sliderValue) {
+            $.each($('.condo-box'), function() {
+              $this = $(this);
+              condoData = $this.data();
+              if(bdrm1 && !bdrm2){
+                if ((condoData.bdrms == 1) && (condoData.sqft <= sliderValue)){
+                  $this.show();
+                } else {
+                  $this.hide();
+                }
+              } else if((bdrm2 && !bdrm1) && (condoData.sqft <= sliderValue)){
+                if (condoData.bdrms == 2){
+                  $this.show();
+                } else {
+                  $this.hide();
+                }
+              } else {
+                $this.show();
+              }
+            });
           }
-        });
-      }
+
+
+
+
+
       </script>
     </body>
   </html>

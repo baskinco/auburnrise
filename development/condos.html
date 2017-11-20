@@ -401,33 +401,7 @@
       <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
       <script>
-      // Set values for units
-        $('#jackson').data({ id:1, sqft:897, bdrms:2 });
-        $('#nicholl').data({ id:2, sqft:808, bdrms:2 });
-        $('#atwood').data({ id:3, sqft:1020, bdrms:2 });
-        $('#cohen').data({ id:4, sqft:976, bdrms:2 });
-        $('#curnoe').data({ id:5, sqft:572, bdrms:2 });
-        $('#richler').data({ id:6, sqft:624, bdrms:2 });
-        $('#carr').data({ id:7, sqft:544, bdrms:1 });
-        $('#mitchell').data({ id:8, sqft:705, bdrms:2 });
-        $('#findlay').data({ id:9, sqft:747, bdrms:2 });
-        $('#lawrence').data({ id:10, sqft:467, bdrms:1 });
-
-        $(document).ready(function() {
-          //print slider value to slider textbox
-          printValue('slider','rangeValue');
-
-          //when a bdrm box is checked ..
-          $("#1bdrm, #2bdrm").click(function(){
-            getValues();
-          });
-
-          //when the slider is moved
-          $("#slider").change(function() {
-            getValues();
-          });
-        });
-
+      // FUNCTIONS
           //make slider textbox equal to slider value
           function printValue(sliderID, textbox) {
             var x = document.getElementById(textbox);
@@ -435,11 +409,11 @@
             x.value = y.value;
           }
 
-
           //get bdrm and slider values
           function getValues() {
             var bdrm1 = false;
             var bdrm2 = false;
+
             var sliderValue;
 
             if($("#1bdrm").is(':checked')){
@@ -454,31 +428,42 @@
           }
 
           function runFilter(bdrm1, bdrm2, sliderValue) {
-            $.each($('.condo-box'), function() {
-              $this = $(this);
-              condoData = $this.data();
-              if(bdrm1 && !bdrm2){
-                if ((condoData.bdrms == 1) && (condoData.sqft <= sliderValue)){
-                  $this.show();
-                } else {
-                  $this.hide();
-                }
-              } else if((bdrm2 && !bdrm1) && (condoData.sqft <= sliderValue)){
-                if (condoData.bdrms == 2){
-                  $this.show();
-                } else {
-                  $this.hide();
-                }
-              } else {
-                $this.show();
-              }
-            });
+                 $.each($('.condo-box'), function() {
+                      $this = $(this);
+                      condoData = $this.data();
+                      var sqftFilter = (condoData.sqft <= sliderValue);
+                      var bedFilter = (!bdrm1 && !bdrm2) || (condoData.bdrms == 1 && bdrm1) || (condoData.bdrms == 2 && bdrm2);
+                      $this.toggle(sqftFilter && bedFilter, 1000);
+                });
           }
 
+          // Set values for units
+          $('#jackson').data({ id:1, sqft:897, bdrms:2 });
+          $('#nicholl').data({ id:2, sqft:808, bdrms:2 });
+          $('#atwood').data({ id:3, sqft:1020, bdrms:2 });
+          $('#cohen').data({ id:4, sqft:976, bdrms:2 });
+          $('#curnoe').data({ id:5, sqft:572, bdrms:2 });
+          $('#richler').data({ id:6, sqft:624, bdrms:2 });
+          $('#carr').data({ id:7, sqft:544, bdrms:1 });
+          $('#mitchell').data({ id:8, sqft:705, bdrms:2 });
+          $('#findlay').data({ id:9, sqft:747, bdrms:2 });
+          $('#lawrence').data({ id:10, sqft:467, bdrms:1 });
 
+        //MAIN SCRIPT
+          $(document).ready(function() {
+            //print slider value to slider textbox
+            printValue('slider','rangeValue');
 
+            //when a bdrm box is checked ..
+            $("#1bdrm, #2bdrm").click(function(){
+              getValues();
+            });
 
-
+            //when the slider is moved
+            $("#slider").change(function() {
+              getValues();
+            });
+          });
       </script>
     </body>
   </html>

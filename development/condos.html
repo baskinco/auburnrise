@@ -433,7 +433,7 @@
                       condoData = $this.data();
                       var sqftFilter = (condoData.sqft <= sliderValue);
                       var bedFilter = (!bdrm1 && !bdrm2) || (condoData.bdrms == 1 && bdrm1) || (condoData.bdrms == 2 && bdrm2);
-                      $this.toggle(sqftFilter && bedFilter, 1000);
+                      $this.toggle(sqftFilter && bedFilter);
                 });
           }
 

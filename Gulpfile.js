@@ -4,6 +4,7 @@ var gulp = require('gulp'),
     autoprefixer = require('autoprefixer'),
     precss = require('precss'),
     htmlmin = require('gulp-htmlmin'),
+    phpmin = require('gulp-php-minify'),
     cssnano = require('cssnano'),
     image = require('gulp-image'),
     cache = require('gulp-cached'),
@@ -28,6 +29,13 @@ gulp.task('html', function() {
       removeComments: true
     }))
     .pipe(gulp.dest(dest));
+});
+
+//PHP
+gulp.task('php', function() {
+  gulp.src(source + '*.php')
+  .pipe(phpmin())
+  .pipe(gulp.dest(dest));
 });
 
 // JavaScript
@@ -68,4 +76,4 @@ gulp.task('webserver', function() {
 });
 
 // Default task (runs at initiation: gulp --verbose)
-gulp.task('default', ['html', 'javascript', 'css', 'watch', 'webserver']);
+gulp.task('default', ['html', 'javascript', 'php', 'css', 'watch', 'webserver']);

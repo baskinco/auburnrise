@@ -83,12 +83,21 @@ var skrollrStart = function() {
     }
 }
 
+// var imageReplace = function() {
+//   var winWidth = $(window).width();
+//   if (winWidth <=768) {
+//     $("#holiday").attr("src","images/holiday_hours_mob.jpg");
+//   }
+// }
+
 // Fire initially
 $(window).on('load', function () {
     skrollrStart();
+    // imageReplace();
 });
 
 // Fire on resize
 $(window).on('resize', function () {
     skrollrStart();
+    // imageReplace();
 });

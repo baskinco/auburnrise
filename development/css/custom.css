@@ -2099,6 +2099,50 @@ a.upgrade-nav--item:hover {
     margin-left: 25px;
   }
 }
+/*--                 PROMO BANNER
+============================================================================ */
+
+.holiday-container {
+  float: none;
+  width: 100%
+}
+
+.holiday-hours {
+  background-image: url("../images/holiday_hours_mob.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 2% auto;
+  background-size: 310px 264px;
+  width: 310px;
+  height:264px;
+}
+
+@media (min-width: 768px) {
+  .holiday-hours {
+    background-image: url("../images/holiday_hours_680.jpg");
+    background-size: 680px 209px;
+    width: 680px;
+    height:209px;
+  }
+}
+
+@media (min-width: 992px) {
+  .holiday-hours {
+    background-image: url("../images/holiday_hours_900.jpg");
+    background-size: 900px 277px;
+    width: 900px;
+    height:277px;
+    }
+  }
+
+@media (min-width: 1200px) {
+  .holiday-hours {
+    background-image: url("../images/holiday_hours_1100.jpg");
+    background-size: 1100px 338px;
+    width: 1100px;
+    height:338px;
+  }
+}
 
 /*--                 FOOTER
 ============================================================================ */

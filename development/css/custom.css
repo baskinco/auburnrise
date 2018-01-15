@@ -34,12 +34,26 @@ $ulight-grey:  #f1f7f7;
 ======================================================== */
 $neue-light:    'HelveticaNeueLTStd-Lt', Helvetica, sans-serif;
 $neue-thin:     'HelveticaNeueLTStd-Th', Helvetica, sans-serif;
+$neue-med:      'HelveticaNeueLTStd-Md', Helvetica, sans-serif;
 $neue-med-ext:  'HelveticaNeueLTStd-MdEx', Helvetica, sans-serif;
 $neue-med-cond: 'HelveticaNeueLTStd-MdCn', Helvetica, sans-serif;
 $lubalin-med:   'LubalinGraphStd-Medium', Courier, serif;
 $lubalin-book:  'LubalinGraphStd-Book', Courier, serif;
 
 @import url("//hello.myfonts.net/count/34660a");
+@import url("//hello.myfonts.net/count/35931c");
+
+
+@font-face {
+  font-family: 'HelveticaNeueLTStd-Md';
+  src: url('../fonts/HelveticaNeueLTStd-Md.eot');
+  src: url('../fonts/HelveticaNeueLTStd-Md.eot?#iefix')
+  format('embedded-opentype'),
+    url('../fonts/HelveticaNeueLTStd-Md.woff2') format('woff2'),
+    url('../fonts/HelveticaNeueLTStd-Md.woff') format('woff'),
+    url('../fonts/HelveticaNeueLTStd-Md.ttf') format('truetype');
+}
+
 
 @font-face {
     font-family: 'LubalinGraphStd-Medium';
@@ -1017,6 +1031,18 @@ a.upgrade-nav--item:hover {
 .filter {
 
 }
+.filter-toggle {
+  background-color: $aqua;
+  a{
+    font-family: $neue-med;
+    text-decoration: none;
+  }
+}
+
+.filter-content {
+
+}
+
 
 .condo-container {
   margin-bottom: 80px;

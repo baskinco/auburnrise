@@ -1,3 +1,10 @@
+/* ---------- FILTER PANEL ---------- */
+$(document).ready(function(){
+    $("#open").click(function(){
+        $("#slidefilter").slideToggle("fast");
+    });
+});
+
 /* ---------- MODAL POPUP ---------- */
 
 function onPopupMobileOpen() {

@@ -1027,22 +1027,32 @@ a.upgrade-nav--item:hover {
 
 /*--                 CONDO PREVIEW
 ============================================================================= */
-
-.filter {
-
-}
+.filter {}
 .filter-toggle {
   background-color: $aqua;
+  display: flex;
+  justify-content: center;
+  height: 68px;
+  padding: 15px 0px 10px 0px;
+
   a{
+    width: 50px;
+    background-size: 50px;
     font-family: $neue-med;
     text-decoration: none;
+    letter-spacing: 1px;
+    color: $white;
+    padding-top: 18px;
+    background-image: url("../images/filter_tri.png");
+    background-repeat: no-repeat;
   }
 }
 
-.filter-content {
-
+#slidefilter {
+  height: 200px;
+  width: 100%;
+  background-color: $aqua;
 }
-
 
 .condo-container {
   margin-bottom: 80px;

@@ -54,6 +54,10 @@
   <!-- Webfonts script -->
   <script src="MyFontsWebfontsKit.js" async></script>
   </head>
+
+
+
+
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="js/jquery.colorbox-min.js"></script>
@@ -155,23 +159,24 @@
   <!--                   CONDO PREVIEW PANEL
   ======================================================== -->
     <div class="container-fluid filter">
-      <div class="container-fluid filter-toggle">
-        <a href="#">Filter</a>
+      <div class="container-fluid filter-toggle" id="open">
+        <a>FILTER</a>
       </div>
-      <div class="container filter-content">
+      <div class="container" id="slidefilter">
         <form name="filter" method="post" action="">
-          <p>Bedrooms
+  
             <input id="1bdrm" type="checkbox" value="1bdrm"/>1 Bedroom
             <input id="2bdrm" type="checkbox" value="2bdrm"/>2 Bedroom
-          </p>
+
           <p>
             <input id="slider" type="range" min="600" max="1200" step="100" value="1200" onchange="printValue('slider','rangeValue')"/>
             <input id="rangeValue" type="text" size="5"/>
+            <label for="1bdrm">1 Bedroom</label>
+            <label for="2bdrm">2 Bedroom</label>
           </p>
         </form>
       </div>
     </div> <!-- container filter -->
-
 
     <div id="condos" class="container condo-container">
       <!-- JACKSON -->

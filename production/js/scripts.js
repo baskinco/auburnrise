@@ -5,6 +5,79 @@ $(document).ready(function(){
     });
 });
 
+// $('.toggle_bdrms input').toggle(function() {
+//   $('.toggle_bdrms input:checkbox').css('display', 'none');
+//   $('.toggle_bdrms label').css({'background-color':'#FFFFFF', 'color':'#00a9b7'});
+// });
+
+$(document).ready(function(){
+    $("#onebdrm").click(function(){
+        $(".toggle").toggleClass("toggle_bdrms toggle_bdrms_hover");
+    });
+});
+
+  //make slider textbox equal to slider value
+  function printValue(sliderID, textbox) {
+    var x = document.getElementById(textbox);
+    var y = document.getElementById(sliderID);
+    x.value = y.value;
+  }
+
+  //get bdrm and slider values
+  function getValues() {
+    var bdrm1 = false;
+    var bdrm2 = false;
+    var sliderValue;
+
+    if($("#onebdrm").is(':checked')){
+      bdrm1 = true;
+    }
+    if ($("#twobdrm").is(':checked')){
+      bdrm2 = true;
+    }
+    sliderValue = $("#rangeValue").val();
+
+    runFilter(bdrm1, bdrm2, sliderValue);
+  }
+
+  function runFilter(bdrm1, bdrm2, sliderValue) {
+         $.each($('.condo-box'), function() {
+              $this = $(this);
+              condoData = $this.data();
+              var sqftFilter = (condoData.sqft <= sliderValue);
+              var bedFilter = (!bdrm1 && !bdrm2) || (condoData.bdrms == 1 && bdrm1) || (condoData.bdrms == 2 && bdrm2);
+              $this.toggle(sqftFilter && bedFilter);
+        });
+  }
+
+  // Set values for units
+  $('#jackson').data({ id:1, sqft:897, bdrms:2 });
+  $('#nicholl').data({ id:2, sqft:808, bdrms:2 });
+  $('#atwood').data({ id:3, sqft:1020, bdrms:2 });
+  $('#cohen').data({ id:4, sqft:976, bdrms:2 });
+  $('#curnoe').data({ id:5, sqft:572, bdrms:2 });
+  $('#richler').data({ id:6, sqft:624, bdrms:2 });
+  $('#carr').data({ id:7, sqft:544, bdrms:1 });
+  $('#mitchell').data({ id:8, sqft:705, bdrms:2 });
+  $('#findlay').data({ id:9, sqft:747, bdrms:2 });
+  $('#lawrence').data({ id:10, sqft:467, bdrms:1 });
+
+//MAIN SCRIPT
+  $(document).ready(function() {
+    //print slider value to slider textbox
+    printValue('slider','rangeValue');
+
+    //when a bdrm box is checked ..
+    $("#onebdrm, #twobdrm").click(function(){
+      getValues();
+    });
+
+    //when the slider is moved
+    $("#slider").change(function() {
+      getValues();
+    });
+  });
+
 /* ---------- MODAL POPUP ---------- */
 
 function onPopupMobileOpen() {

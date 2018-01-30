@@ -18,13 +18,13 @@
     printValue('slider','rangeValue');
 
     //check to see if bdrm checkboxes are checked
-    $("#1bdrm, #2bdrm").click(function() {
+    $("#onebdrm, #twobdrm").click(function() {
       var bdrm1 = false;
       var bdrm2 = false;
-      if($("#1bdrm").is(':checked')){
+      if($("#onebdrm").is(':checked')){
         bdrm1 = true;
       }
-      if ($("#2bdrm").is(':checked')){
+      if ($("#twobdrm").is(':checked')){
         bdrm2 = true;
       }
       filterByBdrms(bdrm1, bdrm2);

@@ -3,6 +3,7 @@ var gulp = require('gulp'),
     postcss = require('gulp-postcss'),
     autoprefixer = require('autoprefixer'),
     precss = require('precss'),
+    mixins = require('postcss-mixins'),
     htmlmin = require('gulp-htmlmin'),
     phpmin = require('gulp-php-minify'),
     cssnano = require('cssnano'),
@@ -47,13 +48,21 @@ gulp.task('javascript', function() {
 
 // CSS
 gulp.task('css', function() {
-    gulp.src(source + '**/*.css')
+    var plugins = [
+        precss,
+        mixins,
+        autoprefixer,
+        cssnano
+    ]
+    return gulp.src(source + '**/*.css')
         .pipe(plumber())
-        .pipe(postcss([
-            precss(),
-            autoprefixer(),
-            cssnano()
-        ]))
+        .pipe(postcss(plugins))
+        // .pipe(postcss([
+        //     cssmixins(),
+        //     precss(),
+        //     autoprefixer(),
+        //     cssnano()
+        // ]))
         .pipe(gulp.dest(dest));
 });
 
@@ -71,7 +80,7 @@ gulp.task('webserver', function() {
     .pipe(webserver({
         livereload: true,
         open: true,
-        host: '10.0.4.71'
+        host: '10.0.4.180'
     }));
 });
 

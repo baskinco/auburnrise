@@ -1655,7 +1655,8 @@ a.upgrade-nav--item:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column-reverse;
-  padding: 0 20px;
+  margin: 0 10px;
+
 }
 
 .unit-top-space {
@@ -1671,14 +1672,70 @@ a.upgrade-nav--item:hover {
   box-shadow: 0px 3px 10px 0px rgba(120,120,120,.7);
 }
 
-/*-- unit-bottom --*/
+/*- unit-bottom --*/
+.unit-bottom-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 10px;
+}
+
 .unit-bottom {
- display: flex;
- flex-direction: column;
- justify-content: space-between;
- align-items: center;
- height: 100%;
- margin: 30px 20px 50px 20px;
+  width: 100%;
+  max-width: 500px;
+	margin: auto;
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(120,120,120,.7);
+  -moz-box-shadow: 0px 3px 10px 0px rgba(120,120,120,.7);
+  box-shadow: 0px 3px 10px 0px rgba(120,120,120,.7);
+}
+
+ul.tabs{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+ul.tabs li{
+  background: $light-grey;
+  color: $white;
+  font-family: $lubalin-med;
+  letter-spacing: .08em;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  display: inline-block;
+  padding: 10px 15px;
+  width: 50%;
+  cursor: pointer;
+  text-align: center;
+}
+
+ul.tabs li.current{
+  background: $white;
+  color: $aqua;
+
+}
+
+.tab-content{
+  display: none;
+  background: $white;
+  padding: 15px;
+  width: 100%;
+  margin: auto;
+  p {
+    font-family: $neue-med-cond;
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+}
+
+.tab-content.current{
+  display: inherit;
+}
+
+.unit-bottom-floorplate {
+  width: 100%;
+  margin: auto;
 }
 
 .unit-bottom-details {
@@ -1687,21 +1744,13 @@ a.upgrade-nav--item:hover {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  padding-top: 35px;
+  margin: 35px auto;
 }
 
 .unit-bottom-details p {
   color: $aqua;
   font-size: 1.1em;
   text-align: center;
-}
-
-.unit-bottom-floorplate {
-  width: 100%;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(120,120,120,.7);
-  -moz-box-shadow: 0px 3px 10px 0px rgba(120,120,120,.7);
-  box-shadow: 0px 3px 10px 0px rgba(120,120,120,.7);
-  margin: auto;
 }
 
 /*-- MEDIA  --*/
@@ -1753,18 +1802,14 @@ a.upgrade-nav--item:hover {
     min-height: 0px;
   }
 
-  .unit-bottom-details {
-    flex-direction: row;
-    align-items: flex-start;
-    margin-top: 40px;
+  .unit-bottom {
+    max-width: 576px;
   }
 
-  .unit-bottom-details p {
-    font-size: 1.1em;
-    flex-direction: column;
-    text-align: left;
+  ul.tabs li{
+    font-size: 1.3em;
+    line-height: 1.4em;
   }
-
 }
 
 @media (min-width: 992px) {
@@ -1786,13 +1831,18 @@ a.upgrade-nav--item:hover {
   }
 
   .unit-bottom {
-    margin: 50px 0;
+    max-width: 641px;
   }
 }
 
 @media (min-width: 1200px) {
   .unit-header-price .condo-box-bottom--price {
     background-position: left 150px top 1px;
+  }
+  .tab-label-content {
+    .tab-content {
+      left: 190px;
+    }
   }
 }
 
